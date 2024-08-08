@@ -8,6 +8,6 @@ terraform {
 }
 #configure the aws provider 
 provider "aws" {
-    regi
+    region =
   
 }
