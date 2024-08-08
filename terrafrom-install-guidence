@@ -93,6 +93,5 @@ ________________________________________________________________________________
  terrafrom validate   # -- for terraform valaditing.
  terraform plan   # -- for planning.
  terraform apply  # -- for execute or apply.
- terraform destroy -auto-approve
- # -- to terminate changes or delete .
+ terraform destroy -auto-approve  # -- to terminate changes or delete .
  _______________________________________________________________________________________________________________
