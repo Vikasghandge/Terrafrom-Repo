@@ -12,4 +12,4 @@ ctrl+shift+p   ---> git clone from git hub --> select your repo.
 then ctrl+shift+p ----> auto git init
 modify json file from 10 to according to your time for auto git.
 create there one folder like folder-name <terrafrom-lab>
-in that 
+in that folder create your essential file to 
