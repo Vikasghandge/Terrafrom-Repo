@@ -5,4 +5,5 @@ go into action bar --> security --> modify iam ---> create new i am role with ad
 then finally attach this rule to your ec2-instance.
 take a ssh of your ec2-instance
 run command  --->  sudo apt update <----
-then you need to clone your 
+then you need to clone your remote repository into your server
+----
