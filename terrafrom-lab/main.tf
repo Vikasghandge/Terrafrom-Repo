@@ -1,4 +1,4 @@
 resource "aws_instance" "test_server" {
      ami = ""
-     inst     }     
+     instance_type     }     
 }
