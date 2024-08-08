@@ -6,4 +6,7 @@ terraform {
     }
   }
 }
-#configure the aws provider
+#configure the aws provider 
+provider "aws" {
+  
+}
