@@ -83,3 +83,5 @@ second is ----  create script file.
 vim install_terrafrom.sh  # this will create file name install_terrafrom.sh file and it will open vim edtor.
 chmod +x install_terraform.sh  # this command will add exucution permission.
 ./install_terraform.sh  # this command will run the script.
+______________________________________________________________________________________________________________
+ now 
