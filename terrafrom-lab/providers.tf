@@ -1,5 +1,7 @@
 terraform {
   required_providers {
-    aw{
+    aws = {
+
+        
   }
 }
