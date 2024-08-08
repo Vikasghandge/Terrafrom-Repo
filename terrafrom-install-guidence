@@ -84,4 +84,5 @@ vim install_terrafrom.sh  # this will create file name install_terrafrom.sh file
 chmod +x install_terraform.sh  # this command will add exucution permission.
 ./install_terraform.sh  # this command will run the script.
 ______________________________________________________________________________________________________________
- now you have already pull 
+ now you have already pull your update repo into your ec2-instance.
+ for run this 
