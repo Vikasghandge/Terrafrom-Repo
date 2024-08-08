@@ -14,3 +14,4 @@ modify json file from 10 to according to your time for auto git.
 create there one folder like folder-name <terrafrom-lab>
 in that folder create your essential file to terrafrom.
 ex. touch providers.tf or touch main.tf.
+now you need to writ
