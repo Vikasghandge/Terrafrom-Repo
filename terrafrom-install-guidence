@@ -48,4 +48,4 @@ it will pull updated repository changes from your local working area.
 ________________________________________________________________________________________________________________
 
 now you need to install terrafrom to your ec2-instance.
-run this 
+run this script direct of manu
