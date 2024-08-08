@@ -81,3 +81,4 @@ ________________________________________________________________________________
 first option run these single commands on your termianl.
 second is ----  create script file.
 vim install_terrafrom.sh
+chmod +x install_terraform.sh
