@@ -10,4 +10,4 @@ then you need to clone your remote repository into your server
 take this repostory access into vs-code 
 ctrl+shift+p   ---> git clone from git hub --> select your repo.
 then ctrl+shift+p ----> auto git init
-modify json file from 10 to according to your time.
+modify json file from 10 to according to your time for auto git.
