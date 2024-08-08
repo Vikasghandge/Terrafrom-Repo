@@ -93,4 +93,4 @@ ________________________________________________________________________________
  terrafrom validate   # -- for terraform valaditing.
  terraform plan   # -- for planning.
  terraform apply  # -- for execute or apply.
- terrafrom dest
+ terrafrom destroy  # -- to terminate changes or delete 
