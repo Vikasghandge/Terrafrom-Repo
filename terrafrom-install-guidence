@@ -43,4 +43,5 @@ resource "aws_instance" "test_server" {
 }
 _______________________________________________________________________________________________________________
 now pull changes from your vs-code to your local repository this file into your local ec2-machine instance.
-go to ec2  -->  git pull origin main 
+go to ec2  -->  git pull origin main.
+it will pull 
