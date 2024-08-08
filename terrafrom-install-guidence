@@ -77,4 +77,6 @@ rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 terraform -version
 
 echo "Terraform installation complete."
- 
+________________________________________________________________________________________________________________
+
+another option
