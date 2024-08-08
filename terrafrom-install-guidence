@@ -90,4 +90,4 @@ ________________________________________________________________________________
  now run some commands.
  terraform init # -- it will init terrafrom.
  terraform fmt # -- for fmt.
- terrafrom validate
+ terrafrom validate   # -- for tera
