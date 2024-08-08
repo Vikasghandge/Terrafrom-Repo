@@ -2,6 +2,6 @@ resource "aws_instance" "test_server" {
      ami = ""
      instance_type = "t2.micro"
      tags = {
-        name = "examle"
+        name = "examlewebserverapp"
      }     }     
 }
