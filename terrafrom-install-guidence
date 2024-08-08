@@ -1,2 +1,4 @@
 frist of all we need to create one ec2-instance simple with default security group.
-make sure your instance is in running state
+make sure your instance is in running state.
+now we need to create one i am role from creadientils,
+go into action bar --> secu
