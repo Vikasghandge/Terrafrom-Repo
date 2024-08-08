@@ -84,4 +84,4 @@ vim install_terrafrom.sh  # this will create file name install_terrafrom.sh file
 chmod +x install_terraform.sh  # this command will add exucution permission.
 ./install_terraform.sh  # this command will run the script.
 ______________________________________________________________________________________________________________
- now 
+ now you have already pull 
