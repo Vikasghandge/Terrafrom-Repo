@@ -49,7 +49,7 @@ ________________________________________________________________________________
 
 now you need to install terrafrom to your ec2-instance.
 run this script direct of manually
-
+________________________________________________________________________________________________________________
 #!/bin/bash
 
 # Update the package index
@@ -77,4 +77,4 @@ rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 terraform -version
 
 echo "Terraform installation complete."
-
+ 
