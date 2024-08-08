@@ -49,4 +49,31 @@ ________________________________________________________________________________
 
 now you need to install terrafrom to your ec2-instance.
 run this script direct of manually
+#!/bin/bash
+
+# Update the package index
+sudo apt-get update
+
+# Install required dependencies
+sudo apt-get install -y wget unzip
+
+# Define the Terraform version you want to install
+TERRAFORM_VERSION="1.6.0"
+
+# Download the latest version of Terraform
+wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+
+# Unzip the downloaded file
+unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+
+# Move the terraform binary to /usr/local/bin
+sudo mv terraform /usr/local/bin/
+
+# Clean up downloaded files
+rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+
+# Verify the installation
+terraform -version
+
+echo "Terraform installation complete."
 
