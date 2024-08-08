@@ -85,4 +85,5 @@ chmod +x install_terraform.sh  # this command will add exucution permission.
 ./install_terraform.sh  # this command will run the script.
 ______________________________________________________________________________________________________________
  now you have already pull your update repo into your ec2-instance.
- for run this scrpit or launch terrafrom script you need to run 
+ for run this scrpit or launch terrafrom script you need to run some commands
+ cd that file where your terr
