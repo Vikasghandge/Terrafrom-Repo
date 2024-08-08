@@ -88,4 +88,4 @@ ________________________________________________________________________________
  for run this scrpit or launch terrafrom script you need to run some commands
  cd that file where your terrafrom files are exist. ex cd terrafrom-lab.
  now run some commands.
- terraform 
+ terraform init #
