@@ -91,4 +91,5 @@ ________________________________________________________________________________
  terraform init # -- it will init terrafrom.
  terraform fmt # -- for fmt.
  terrafrom validate   # -- for terraform valaditing.
- terraform 
+ terraform plan   # -- for planning.
+ 
