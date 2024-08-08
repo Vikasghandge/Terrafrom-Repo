@@ -4,4 +4,4 @@ now we need to create one i am role from creadientils,
 go into action bar --> security --> modify iam ---> create new i am role with administrative access.
 then finally attach this rule to your ec2-instance.
 take a ssh of your ec2-instance
-run command  ---
+run command  --->  sudo apt update <----
