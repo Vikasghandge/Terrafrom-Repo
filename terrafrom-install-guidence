@@ -92,4 +92,4 @@ ________________________________________________________________________________
  terraform fmt # -- for fmt.
  terrafrom validate   # -- for terraform valaditing.
  terraform plan   # -- for planning.
- 
+ terraform apply  # -- for execute or 
