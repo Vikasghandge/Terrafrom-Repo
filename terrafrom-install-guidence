@@ -42,5 +42,5 @@ resource "aws_instance" "test_server" {
   }
 }
 _______________________________________________________________________________________________________________
-now pull changes from your vs-code to  this file into your local ec2-machine instance.
+now pull changes from your vs-code to your local repository this file into your local ec2-machine instance.
 
