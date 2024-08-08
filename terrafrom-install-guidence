@@ -6,4 +6,4 @@ then finally attach this rule to your ec2-instance.
 take a ssh of your ec2-instance
 run command  --->  sudo apt update <----
 then you need to clone your remote repository into your server
-----
+---->  git clone <your remote>
