@@ -6,4 +6,4 @@ terraform {
     }
   }
 }
-#cong
+#configure the aws provider
