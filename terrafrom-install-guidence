@@ -15,4 +15,18 @@ create there one folder like folder-name <terrafrom-lab>
 in that folder create your essential file to terrafrom.
 ex. touch providers.tf or touch main.tf.
 now you need to write your code in that files some are give examles here.
-in 
+in providers.tf 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+# Configure the AWS provider
+provider "aws" {
+  region = "ap-south-1"
+}
+
