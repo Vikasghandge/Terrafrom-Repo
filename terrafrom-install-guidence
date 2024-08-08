@@ -9,4 +9,4 @@ then you need to clone your remote repository into your server
 ---->  git clone <your remote repository url>  <------
 take this repostory access into vs-code 
 ctrl+shift+p   ---> git clone from git hub --> select your repo.
-then 
+then ctrl+shift+p --
