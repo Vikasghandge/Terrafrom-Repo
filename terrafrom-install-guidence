@@ -49,6 +49,7 @@ ________________________________________________________________________________
 
 now you need to install terrafrom to your ec2-instance.
 run this script direct of manually
+
 #!/bin/bash
 
 # Update the package index
