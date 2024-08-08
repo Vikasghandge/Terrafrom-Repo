@@ -87,4 +87,5 @@ ________________________________________________________________________________
  now you have already pull your update repo into your ec2-instance.
  for run this scrpit or launch terrafrom script you need to run some commands
  cd that file where your terrafrom files are exist. ex cd terrafrom-lab.
- 
+ now run some commands.
+ terrafrom 
