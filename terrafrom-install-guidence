@@ -89,4 +89,5 @@ ________________________________________________________________________________
  cd that file where your terrafrom files are exist. ex cd terrafrom-lab.
  now run some commands.
  terraform init # -- it will init terrafrom.
- terraf
+ terraform fmt # -- for fmt.
+ terrafrom validate
