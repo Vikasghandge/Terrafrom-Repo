@@ -5,3 +5,8 @@ resource "aws_vpc" "main" {
    Name = "Project VPC"
  }
 }
+
+
+resource "" "name" {
+  
+}
