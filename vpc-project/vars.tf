@@ -1,3 +1,4 @@
 variable "AWS_REGION" {    
-    default = "ap-south-1"
+    description = "The AWS region where resources will be created."
+    default     = "ap-south-1"
 }
