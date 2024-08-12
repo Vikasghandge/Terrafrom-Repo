@@ -10,6 +10,4 @@ resource “aws_vpc” “prod-vpc” {
     }
 }
 
-#creating subnets." {
-  
-}
+#creating subnets
