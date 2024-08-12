@@ -1,11 +1,24 @@
-variable "public_subnet_cidrs" {
- type        = list(string)
- description = "Public Subnet CIDR values"
- default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+# Define the VPC
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
+  enable_dns_support = true
+  enable_dns_hostnames = true
+  enable_classiclink = false
+  instance_tenancy = "default"
+
+  tags = {
+    Name = "main-vpc"
+  }
 }
- 
-variable "private_subnet_cidrs" {
- type        = list(string)
- description = "Private Subnet CIDR values"
- default     = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+
+# Define a public subnet
+resource "aws_subnet" "public" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = "10.0.1.0/24"
+  availability_zone       = "us-west-2a"
+  map_public_ip_on_launch = true
+
+  tags = {
+    Name = "public-subnet"
+  }
 }
