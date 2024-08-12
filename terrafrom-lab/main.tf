@@ -8,11 +8,3 @@ resource "aws_instance" "test_server" {
 }
 
 
-resource "my_terraform_project" "main" {
-  ami = " ********* "
-  instance_type = "t2.micro"
-  tags = {
-    Name = test_server_app
-  }
-  
-}
