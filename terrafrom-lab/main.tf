@@ -9,6 +9,6 @@ resource "aws_instance" "test_server" {
 
 
 resource "my_terraform_project" "main" {
-  
+  ami = " *********     "
   
 }
