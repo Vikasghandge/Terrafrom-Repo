@@ -8,6 +8,7 @@ resource "aws_instance" "test_server" {
 }
 
 
-resource "" "name" {
+resource "my_terraform_project" "main" {
+  
   
 }
