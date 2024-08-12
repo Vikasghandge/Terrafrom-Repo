@@ -6,3 +6,8 @@ resource "aws_instance" "test_server" {
     Name = "examplewebserverapp"
   }
 }
+
+
+resource "" "name" {
+  
+}
