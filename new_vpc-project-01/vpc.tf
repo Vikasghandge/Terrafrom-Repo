@@ -7,6 +7,6 @@ resource "aws_vpc" "main" {
 }
 
 
-resource "" "name" {
+resource "aws_project-vpc" "name" {
   
 }
