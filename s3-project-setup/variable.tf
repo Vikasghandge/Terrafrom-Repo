@@ -15,7 +15,7 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-    # default = "hybrid"
+    # default = "devops-key"
     description = "calling key-pair"
 }
 
