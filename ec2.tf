@@ -1,4 +1,8 @@
 resource "aws" "server_01" {
-    region = "up-"
-  
-}
+    region = "ap-south-1"
+
+  }
+
+  resource "" "name" {
+    
+  }
