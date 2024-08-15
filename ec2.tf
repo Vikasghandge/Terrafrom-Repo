@@ -1,3 +1,3 @@
-resource "aws" "name" {
+resource "aws" "server_01" {
   
 }
