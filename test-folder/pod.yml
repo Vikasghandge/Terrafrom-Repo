@@ -28,4 +28,5 @@ spec:
   ports:
    port: 80
     targetport: 80
-    nodeport
+    nodeport: 32000
+    
