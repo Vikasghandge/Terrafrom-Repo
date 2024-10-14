@@ -73,7 +73,8 @@ metadata:
  name: my-service
 spec: 
  selector:
-  
+app: my-app
+ 
 
 
 
