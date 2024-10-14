@@ -1,3 +1,4 @@
 FROM nginx:latest
 copy . /usr/share/nginx/html
-ex
+EXPOSE 80
+CMD [ "nginx", "" ]
