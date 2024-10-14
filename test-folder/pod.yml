@@ -63,8 +63,7 @@ resources:
   cpu: 100m
 port:
 containerPort: 80
-targetport: 80
-nodeport: 32000
+
 
 ---
 apiVersion: v1
@@ -75,7 +74,8 @@ spec:
  selector:
 app: my-app
  type: NodePort
-  
+po 
+
 
 
 
