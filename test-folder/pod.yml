@@ -22,4 +22,5 @@ kind: Service
 metadata: 
  name: my-service
 spec: 
- se 
+ selector: 
+   
