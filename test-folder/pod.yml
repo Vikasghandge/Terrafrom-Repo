@@ -62,5 +62,7 @@ resources:
   memory: "500Mi"
   cpu: 100m
 port:
-containerPort: 
+containerPort: 80
+targetport: 80
+nodeport: 
    
