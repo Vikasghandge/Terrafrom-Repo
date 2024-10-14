@@ -56,4 +56,5 @@ metadata:
 spec: 
  containers:
   name:  my-conatiner
+  image:  nginx:latest
      
