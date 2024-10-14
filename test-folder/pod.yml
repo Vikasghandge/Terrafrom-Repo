@@ -59,4 +59,5 @@ spec:
   image:  nginx:latest
 resources: 
  limits:   
-  memory: "" 
+  memory: "500Mi"
+  ram 
