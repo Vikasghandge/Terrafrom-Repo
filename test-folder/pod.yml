@@ -12,4 +12,7 @@ spec:
       limits:
         cpu: "500m"
         memory: "125Mi"
-        
+     ports:
+     - name:  Port Name
+       port:  Port
+       protocol: TCP   
