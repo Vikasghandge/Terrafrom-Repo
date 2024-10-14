@@ -25,3 +25,7 @@ spec:
  selector: 
   app: my-app
  type: NodePort  
+  ports:
+  - name:  Port Name
+    port:  Port
+    protocol: TCP
