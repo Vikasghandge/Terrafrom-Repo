@@ -61,5 +61,6 @@ resources:
  limits:   
   memory: "500Mi"
   cpu: 100m
-port: 
+port:
+containerPort: 
    
