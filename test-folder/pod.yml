@@ -6,7 +6,7 @@ metadata:
     name: myapp
 spec:
   containers:
-  - name: myapp
+  - name: my-container
     image: <Image>
     resources:
       limits:
