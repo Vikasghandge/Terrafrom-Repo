@@ -24,4 +24,4 @@ metadata:
 spec: 
  selector: 
   app: my-app
-   
+ type: NodePort  
