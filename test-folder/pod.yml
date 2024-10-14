@@ -67,6 +67,7 @@ targetport: 80
 nodeport: 32000
 
 ---
+apiVersion: apiVersion: v1
 
 
 
