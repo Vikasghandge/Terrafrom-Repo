@@ -52,4 +52,4 @@ kind: pod
 metadata: 
   name:  my-app
   labels: 
-  
+   my-app
