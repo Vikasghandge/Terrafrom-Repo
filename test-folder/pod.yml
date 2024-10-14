@@ -53,4 +53,6 @@ metadata:
   name:  my-app
   labels: 
    app: my-app
-spe   
+spec: 
+ containers:
+     
