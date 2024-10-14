@@ -7,4 +7,5 @@ metadata:
 spec: 
  containers:
    - name: my-conatiner
-     image:  registry/user/image
+     image:  nginx:latest
+  re   
