@@ -74,7 +74,12 @@ spec:
  selector:
 app: my-app
  type: NodePort
-po 
+ports:
+- name:  Port Name
+  port:  Port
+  protocol: TCP
+  targetport: 80
+  nodeport: 32000 
 
 
 
