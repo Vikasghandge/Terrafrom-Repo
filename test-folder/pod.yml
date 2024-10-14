@@ -9,4 +9,5 @@ spec:
    - name: my-conatiner
      image:  nginx:latest
      resources:    
-      lim
+      limits:
+        cpu: 500mi
