@@ -70,7 +70,7 @@ nodeport: 32000
 apiVersion: v1
 kind: servic
 metadata:
-name: my-conatiner
+ name: my-conatiner
 
 
 
