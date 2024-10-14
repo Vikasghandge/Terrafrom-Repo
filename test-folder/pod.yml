@@ -58,4 +58,5 @@ spec:
   name:  my-conatiner
   image:  nginx:latest
 resources: 
- limits:    
+ limits:   
+  memory: "" 
