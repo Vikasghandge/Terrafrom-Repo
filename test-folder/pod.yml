@@ -48,4 +48,6 @@ spec:
 
 ---
 apiVersion: v1
-ki
+kind: pod
+metadata: 
+name:
