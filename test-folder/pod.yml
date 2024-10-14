@@ -64,5 +64,7 @@ resources:
 port:
 containerPort: 80
 targetport: 80
-nodeport: 
+nodeport: 32000
+
+
    
