@@ -6,4 +6,5 @@ metadata:
  app: my-app
 spec: 
  containers:
-   - name: my-
+   - name: my-conatiner
+     image:  registry/user/image
