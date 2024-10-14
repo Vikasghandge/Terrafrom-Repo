@@ -69,8 +69,7 @@ nodeport: 32000
 ---
 apiVersion: v1
 kind: servic
-metadata: my-service
-
+metadata:
 
 
 
