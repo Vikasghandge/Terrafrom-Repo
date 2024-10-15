@@ -5,4 +5,5 @@ EXPOSE 80
 CMD [ "nginx", "daemon", "off";]
 
 FROM #base image
-RUN   # it will run commands while continer i 
+RUN   # it will run commands while continer is creating like install packages 
+COPY source dest
