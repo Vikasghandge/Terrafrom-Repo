@@ -2,4 +2,5 @@ FROM ubuntu:latest
 RUN apt-get update && apt install nginx
 COPY /src/.  .
 EXPOSE 80
-CMD [ "nginx", "daemon", "off" ]
+CMD [ "nginx", "daemon", "off";]
+
