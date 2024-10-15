@@ -6,5 +6,5 @@ CMD [ "nginx", "daemon", "off";]
 
 FROM #base image
 RUN   # it will run commands while continer is creating like install packages 
-COPY # it will copy from local host machine to docker conntainer 
+COPY # it will copy containt from local host machine to docker conntainer 
 
