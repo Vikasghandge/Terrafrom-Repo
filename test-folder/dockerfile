@@ -9,6 +9,6 @@ RUN   # it will run commands while continer is creating like install packages
 COPY # it will copy containt from local host machine to docker container 
 WORKDIR  # it will set workidir like pwd
 ADD # you can add containet from remote location to you containers like url adding containt from s3
-EXPOSE it will expose container on given port number or 
+EXPOSE it will expose container on given port number or it will tell conatiner to listen traffic from this port
 
 
