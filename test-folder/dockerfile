@@ -8,6 +8,6 @@ FROM #base image
 RUN   # it will run commands while continer is creating like install packages 
 COPY # it will copy containt from local host machine to docker container 
 WORKDIR  # it will set workidir like pwd
-
+ADD # 
 
 
