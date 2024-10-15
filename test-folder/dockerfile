@@ -1,2 +1,3 @@
 FROM ubuntu:latest
-RUN apt-get update && apt install n
+RUN apt-get update && apt install nginx
+COPY /src/ dest
