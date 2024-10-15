@@ -4,3 +4,4 @@ COPY /src/.  .
 EXPOSE 80
 CMD [ "nginx", "daemon", "off";]
 
+FROM 
