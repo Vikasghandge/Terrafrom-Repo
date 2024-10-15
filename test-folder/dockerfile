@@ -5,4 +5,4 @@ EXPOSE 80
 CMD [ "nginx", "daemon", "off";]
 
 FROM #base image
-RUN 
+RUN   # it will run commands while continer i 
