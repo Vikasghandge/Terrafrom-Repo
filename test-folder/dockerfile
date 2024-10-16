@@ -11,6 +11,6 @@ WORKDIR  # it will set workidir like pwd
 ADD # you can add containet from remote location to you containers like url adding containt from s3
 EXPOSE    # it will expose container on given port number or it will tell conatiner to listen traffic from this port
 CMD  # its a defaults command it will execute command or process after container has created 
-ENTRYPOINT # its also default commnad to execute task after 
-
+ENTRYPOINT # its also default commnad to execute task after conatiner has been created.
+ENV basically 
 
