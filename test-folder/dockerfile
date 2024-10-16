@@ -14,5 +14,6 @@ CMD  # its a defaults command it will execute command or process after container
 ENTRYPOINT # its also default commnad to execute task after conatiner has been created.
 ENV # basically it is used for passing varibale 
 ARG  # it is also use for pass varibale inside the conatiner s 
-
+## diffrence between env and arg 
+argument is used for 
 
