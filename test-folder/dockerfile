@@ -16,7 +16,8 @@ ENV # basically it is used for passing varibale
 ARG  # it is also use for pass varibale inside the conatiner s 
 ## diffrence between env and arg 
 argument # is used for to pass variable insaide the conatijers while container is creating which things we 
-usually  #passs at one time 
+usually  # passs at one time 
+
 
 
 
