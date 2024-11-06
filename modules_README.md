@@ -118,70 +118,31 @@ resource "aws_instance" "example_instance" {
 variable.tf     ## adding variables 
 
 ```
-provider "aws" {
-  region = "ap-south-1"  # Mumbai region
+variable "vpc_cidr" {
+  description = "CIDR block for the VPC"
+  default     = "10.0.0.0/16"
 }
 
-# Create a VPC
-resource "aws_vpc" "example_vpc" {
-  cidr_block = var.vpc_cidr
-  tags = {
-    Name = "ExampleVPC"
-  }
+variable "subnet_cidr" {
+  description = "CIDR block for the public subnet"
+  default     = "10.0.1.0/24"
 }
 
-# Create a public subnet
-resource "aws_subnet" "example_subnet" {
-  vpc_id            = aws_vpc.example_vpc.id
-  cidr_block        = var.subnet_cidr
-  map_public_ip_on_launch = true  # Automatically assign a public IP to instances in this subnet
-  availability_zone = "ap-south-1a"
-
-  tags = {
-    Name = "ExamplePublicSubnet"
-  }
+variable "ami_value" {
+  description = "AMI ID for the EC2 instance"
+  default     = "ami-0dee22c13ea7a9a67"  # Your specified AMI ID
 }
 
-# Create an Internet Gateway
-resource "aws_internet_gateway" "example_igw" {
-  vpc_id = aws_vpc.example_vpc.id
-
-  tags = {
-    Name = "ExampleInternetGateway"
-  }
+variable "instance_type_value" {
+  description = "Instance type for the EC2 instance"
+  default     = "t2.micro"
 }
 
-# Create a route table for the VPC and associate it with the subnet
-resource "aws_route_table" "example_route_table" {
-  vpc_id = aws_vpc.example_vpc.id
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.example_igw.id
-  }
-
-  tags = {
-    Name = "ExampleRouteTable"
-  }
+variable "key_name" {
+  description = "Key pair name for SSH access"
+  default     = "my-key-pair"  # Replace with your key pair name
 }
 
-# Associate the route table with the subnet
-resource "aws_route_table_association" "example_route_table_assoc" {
-  subnet_id      = aws_subnet.example_subnet.id
-  route_table_id = aws_route_table.example_route_table.id
-}
-
-# Create an EC2 instance in the public subnet
-resource "aws_instance" "example_instance" {
-  ami           = var.ami_value
-  instance_type = var.instance_type_value
-  subnet_id     = aws_subnet.example_subnet.id
-  key_name      = var.key_name
-
-  tags = {
-    Name = "ExampleEC2Instance"
-  }
-}
 ```
 
 
