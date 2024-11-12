@@ -1,4 +1,6 @@
 import boto3
 import datetime
 
-s3 = boto3
+s3 = boto3.client ("s3")
+
+def
