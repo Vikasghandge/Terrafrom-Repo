@@ -8,12 +8,5 @@ resource "aws_instance" "example" {
   subnet_id     = var.subnet_id_value        # Subnet ID from variables file
 }
 
-terraform {
-  backend "s3" {
-    bucket = "bucccket2"
-    key    = "path/to/your/statefile.tfstate"  # Specify a path inside the bucket for your state file
-    region = "ap-south-1"                     # Replace with the AWS region of your bucket
-    encrypt = true                             # Optional, but recommended for encryption at rest
-  }
-}
+
 
