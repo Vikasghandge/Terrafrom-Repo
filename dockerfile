@@ -13,7 +13,7 @@ FROM ubuntu:latest
 
 # Install Apache2, zip, unzip,  wget
 RUN apt-get update -y && \
-    apt-get install -y apache2 zip unzip wget && \
+    apt-get install -y nginx zip unzip wget && \
     apt-get clean
 
 # Set the working directory
