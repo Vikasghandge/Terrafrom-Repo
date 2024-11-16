@@ -17,7 +17,7 @@ RUN apt-get update -y && \
     apt-get clean
 
 # Set the working directory
-WORKDIR /var/www/html
+WORKDIR /usr/var/nginx
 
 # Download and extract the template
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip && \
