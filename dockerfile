@@ -1,2 +1,2 @@
 FROM ubuntu:lastest
-RUN 
+RUN apt-get update -y && 
