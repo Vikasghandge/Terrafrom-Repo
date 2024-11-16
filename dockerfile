@@ -4,3 +4,4 @@ WORKDIR /var/www/html
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
 RUN unzip oxer.zip
 RUN cp -rvf . .
+EXPOSE 80
