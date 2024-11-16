@@ -29,4 +29,4 @@ RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page2
 EXPOSE 80
 
 # Start Apache in the foreground
-CMD ["nginx", "-D", "daemon off"]
+CMD ["nginx", "-D", "daemon off;"]
