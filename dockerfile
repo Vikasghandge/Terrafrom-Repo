@@ -1,2 +1,2 @@
 FROM ubuntu:lastest
-WORKDIR /
+RUN 
