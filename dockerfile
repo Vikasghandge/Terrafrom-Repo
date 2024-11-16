@@ -10,9 +10,8 @@ WORKDIR /usr/share/nginx/html
 
 # Download and extract the template
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip && \
-    unzip oxer.zip 
-    cp -rvf oxer/* . && \
-    rm -rf oxer oxer.zip
+RUN unzip oxer.zip 
+
 
 # Expose the web server port
 EXPOSE 80
