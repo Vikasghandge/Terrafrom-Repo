@@ -5,4 +5,4 @@ RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page2
 RUN unzip oxer.zip
 RUN cp -rvf . .
 EXPOSE 80
-CMD [ "apache2ctl" ]
+CMD [ "apache2ctl", "-D", "" ]
