@@ -1,3 +1,3 @@
 FROM ubuntu:lastest
 RUN apt-get update -y && apt-get install apache2 zip unzip wget
-WORKDIR 
+WORKDIR /var/www/html
