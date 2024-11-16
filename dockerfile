@@ -1,23 +1,13 @@
-# FROM ubuntu:lastest
-# RUN apt-get update -y && apt-get install apache2 zip unzip wget
-# WORKDIR /var/www/html
-# RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
-# RUN unzip oxer.zip
-# RUN cp -rvf . .
-# EXPOSE 80
-# CMD [ "apache2ctl", "-D", "FOREGROUND" ]
-
-
 # Use the official Ubuntu base image
 FROM ubuntu:latest
 
-# Install Apache2, zip, unzip,  wget
+# Install Nginx, zip, unzip, wget
 RUN apt-get update -y && \
     apt-get install -y nginx zip unzip wget && \
     apt-get clean
 
-# Set the working directory
-WORKDIR /usr/var/nginx/html
+# Set the working directory for Nginx
+WORKDIR /usr/share/nginx/html
 
 # Download and extract the template
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip && \
@@ -28,5 +18,5 @@ RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page2
 # Expose the web server port
 EXPOSE 80
 
-# Start Apache in the foreground
-CMD ["nginx", "-D", "daemon off;"]
+# Start Nginx in the foreground
+CMD ["nginx", "-g", "daemon off;"]
