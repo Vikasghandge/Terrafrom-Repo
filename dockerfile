@@ -5,7 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update -y && apt-get install nginx unzip
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
 RUN unzip oxer.zip
-
+COPY 
 
 
 # Expose the web server port
