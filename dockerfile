@@ -11,7 +11,7 @@
 # Use the official Ubuntu base image
 FROM ubuntu:latest
 
-# Install Apache2, zip, unzip, and wget
+# Install Apache2, zip, unzip,  wget
 RUN apt-get update -y && \
     apt-get install -y apache2 zip unzip wget && \
     apt-get clean
