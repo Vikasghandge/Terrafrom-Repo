@@ -3,6 +3,7 @@ FROM ubuntu:latest
 
 # Install Nginx, zip, unzip, wget
 RUN apt-get update -y && apt-get install nginx unzip
+RUN wget 
 
 
 # Expose the web server port
