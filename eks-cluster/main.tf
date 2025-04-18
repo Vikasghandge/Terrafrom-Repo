@@ -19,6 +19,7 @@ module "vpc" {
 
 module "eks" {
   source          = "terraform-aws-modules/eks/aws"
+  version         = "20.8.4"  # or the latest version
   cluster_name    = var.cluster_name
   cluster_version = "1.27"
 
@@ -27,11 +28,11 @@ module "eks" {
 
   cluster_endpoint_public_access = true
 
-  node_groups = {
+  eks_managed_node_groups = {
     eks_nodes = {
-      desired_capacity = var.desired_capacity
-      max_capacity     = var.max_capacity
-      min_capacity     = var.min_capacity
+      desired_size = var.desired_capacity
+      max_size     = var.max_capacity
+      min_size     = var.min_capacity
 
       instance_types = [var.node_instance_type]
     }
@@ -42,3 +43,4 @@ module "eks" {
     Terraform   = "true"
   }
 }
+
