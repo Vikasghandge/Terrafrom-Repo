@@ -27,7 +27,7 @@ module "vpc" {
   }
 }
 
-module "eks" {
+module "eks1" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 19.15"  # Updated module version
 
