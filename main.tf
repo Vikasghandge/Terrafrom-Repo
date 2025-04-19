@@ -4,7 +4,7 @@ provider "aws" {
 
 #module "rds" {
 #    source = "./modules/rds"
-}
+#}
 
 module "eks" {
     source = "./modules/eks"
@@ -15,6 +15,6 @@ module "eks" {
     node_instance_type = "t3.medium"
 }
 
-module "s3" {
-    source = "./modules/s3"
-}
+#module "s3" {
+#    source = "./modules/s3"
+#}
