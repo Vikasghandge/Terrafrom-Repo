@@ -1,3 +1,3 @@
 module "rds" {
-    source = "./rds"
+    source = "./modules/rds"
 }
