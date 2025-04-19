@@ -29,7 +29,7 @@ module "vpc" {
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "~> 19.0"
+  version = "~> 19.15"  # Updated module version
 
   cluster_name    = var.cluster_name
   cluster_version = var.cluster_version
@@ -39,6 +39,15 @@ module "eks" {
 
   cluster_endpoint_public_access = true
 
+  # Modern IAM role configuration
+  create_iam_role = true
+  iam_role_name   = "${var.cluster_name}-cluster-role"
+  iam_role_use_name_prefix = false
+  iam_role_additional_policies = {
+    AmazonEKSClusterPolicy          = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+    AmazonEKSVPCResourceController = "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
+  }
+
   eks_managed_node_groups = {
     default = {
       min_size     = var.node_group_min_size
@@ -47,6 +56,13 @@ module "eks" {
 
       instance_types = [var.node_group_instance_type]
       capacity_type  = "ON_DEMAND"
+
+      # Modern node group IAM configuration
+      iam_role_additional_policies = {
+        AmazonEC2ContainerRegistryReadOnly = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
+        AmazonEKSWorkerNodePolicy         = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+        AmazonEKS_CNI_Policy              = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+      }
     }
   }
 
