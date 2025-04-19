@@ -11,7 +11,7 @@ terraform {
   }
 }
 
-provider "aws" {
+provider aws.use1 {
   region = var.region
 }
 
