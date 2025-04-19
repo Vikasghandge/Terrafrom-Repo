@@ -11,7 +11,8 @@ terraform {
   }
 }
 
-provider aws.use1 {
+provider "aws" {
+  alias  = "use1"
   region = var.region
 }
 
