@@ -11,6 +11,6 @@ pipeline {
                 sh 'Docker Build -t image_name ./my image_name'
             }
         }
-        
+        stage('Docker Push') 
     }
 }
