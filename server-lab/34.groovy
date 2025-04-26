@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             stpes {
-                sh ''
+                sh 'echo "we are depl"'
             }
         }
     }
