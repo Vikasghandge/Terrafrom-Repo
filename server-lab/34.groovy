@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             stpes {
-                sh 'echo "we are deploying in "'
+                sh 'echo "we are deploying in test env"'
             }
         }
     }
