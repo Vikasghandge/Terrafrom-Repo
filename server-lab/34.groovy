@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh 'Docker Build '
+                sh 'Docker Build -t image_name ./'
             }
         }
     }
