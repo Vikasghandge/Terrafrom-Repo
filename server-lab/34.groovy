@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Docker Push') {
             stage {
-                withCredentials
+                withCredentials([])
             }
         }
     }
