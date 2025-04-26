@@ -6,10 +6,6 @@ pipeline {
                 git 'your git repo uurl'
             }
         }
-        stage {
-            steps {
-                
-            }
-        }
+        stage('Build')
     }
 }
