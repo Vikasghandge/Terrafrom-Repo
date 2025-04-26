@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                
+                'location of your pom.xml file'
             }
         }
     }
