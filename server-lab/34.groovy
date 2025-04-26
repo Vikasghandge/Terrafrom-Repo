@@ -16,6 +16,8 @@ pipeline {
                 'location of your pom.xml file'
             }
         }
-        stage9
+        stage('Deploy') {
+            
+        }
     }
 }
