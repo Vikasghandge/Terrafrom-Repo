@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             stpes {
-                
+                git 'your git repo url'
             }
         }
     }
