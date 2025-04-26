@@ -6,5 +6,8 @@ pipeline {
                 git 'your git repo uurl'
             }
         }
+        stage {
+            
+        }
     }
 }
