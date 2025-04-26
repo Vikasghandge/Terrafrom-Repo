@@ -17,7 +17,9 @@ pipeline {
             }
         }
         stage('Deploy') {
-            
+            stpes {
+                sh ''
+            }
         }
     }
 }
