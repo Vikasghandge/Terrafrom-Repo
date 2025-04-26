@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             stpes {
-                sh 'echo "we are depl"'
+                sh 'echo "we are deploying in "'
             }
         }
     }
