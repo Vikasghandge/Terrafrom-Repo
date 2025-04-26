@@ -14,6 +14,8 @@ pipeline {
         stage('Docker Push') {
             steps {
                 withCredentials([userpassword(credentialsId: dockerhub-credentials, usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                   
+                   sh 
                     echo '$DOCKER_PASS' |  docker ulogin -u '$DOCKER_USER'
                         docker tag 
                         docker push image_name/vikasghandge     
