@@ -60,19 +60,10 @@ pipeline {
         stage('Docker Scout Image Analysis') {
             steps {
                 script {
-                    // Install Docker Scout locally
-                    sh '''
-                        mkdir -p scout-bin
-                        curl -fsSL https://github.com/docker/scout-cli/releases/latest/download/docker-scout-linux-amd64 \
-                            -o scout-bin/docker-scout
-                        chmod +x scout-bin/docker-scout
-                    '''
-                    
                     withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
-                        sh """
-                            ./scout-bin/docker-scout quickview ${DOCKER_IMAGE}
-                            ./scout-bin/docker-scout cves ${DOCKER_IMAGE}
-                            ./scout-bin/docker-scout recommendations ${DOCKER_IMAGE}
+                        sh "docker-scout quickview ${DOCKER_IMAGE}"
+                        sh "docker-scout cves ${DOCKER_IMAGE}"
+                        sh "docker-scout recommendations ${DOCKER_IMAGE}"
                         """
                     }
                 }
