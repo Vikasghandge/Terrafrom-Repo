@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git url: '', 
-                    branch: 'master'
+                git url: 'https://github.com/Vikasghandge/Docker.git', 
+                    branch: 'main'
             }
         }
 
