@@ -57,7 +57,13 @@ pipeline {
             }
         }
 
-        
+        stage('Docker Scout Image Analysis') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                        sh "docker-scout quickview ${DOCKER_IMAGE}"
+                        sh "docker-scout cves ${DOCKER_IMAGE}"
+                        sh "docker-scout recommendations ${DOCKER_IMAGE}"
                     }
                 }
             }
