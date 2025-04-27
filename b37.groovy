@@ -71,7 +71,7 @@ pipeline {
 
         stage('Deploy with Docker Compose') {
             steps {
-                dir('devops-exam-app-master/backend') {
+                dir('devops-exam-app-master') {
                     sh '''
                         echo "Current working directory:"
                         pwd
