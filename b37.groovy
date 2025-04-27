@@ -64,7 +64,7 @@ pipeline {
                         sh "docker-scout quickview ${DOCKER_IMAGE}"
                         sh "docker-scout cves ${DOCKER_IMAGE}"
                         sh "docker-scout recommendations ${DOCKER_IMAGE}"
-                        """
+                        
                     }
                 }
             }
