@@ -73,7 +73,11 @@ pipeline {
 
         stage('Deploy with Docker Compose') {
             steps {
-                sh '''
+                dir('devops-exam-app-master/backend') {
+            // Verify compose file exists
+            sh 'ls -la docker-compose.yml || true'
+            
+            sh '''
                 # Clean up any existing containers
                 docker compose down --remove-orphans || true
                 
@@ -91,7 +95,7 @@ pipeline {
                 
                 # Additional wait for full initialization
                 sleep 10
-                '''
+            '''
             }
         }
 
