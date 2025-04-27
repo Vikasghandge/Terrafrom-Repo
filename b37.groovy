@@ -70,45 +70,41 @@ pipeline {
         }
 
         stage('Deploy with Docker Compose') {
-            steps {
-                dir('devops-exam-app-master') {
-                    sh '''
-                        echo "Current working directory:"
-                        pwd
-                        echo "Directory contents:"
-                        ls -la
-                        echo "Checking compose file:"
-                        if [ ! -f docker-compose.yml ]; then
-                            echo "ERROR: docker-compose.yml not found!"
-                            exit 1
-                        fi
-                        
-                        echo "Stopping any existing containers..."
-                        docker compose down --remove-orphans || true
-                        
-                        echo "Building and starting containers..."
-                        docker compose up -d --build || { echo "Failed to start containers"; exit 1; }
-                        
-                        echo "Waiting for MySQL to be ready..."
-                        MAX_RETRIES=24
-                        RETRY_INTERVAL=5
-                        for ((i=1; i<=MAX_RETRIES; i++)); do
-                            if docker compose exec -T mysql mysqladmin ping -uroot -prootpass --silent; then
-                                echo "MySQL is ready!"
-                                break
-                            fi
-                            echo "Attempt $i/$MAX_RETRIES: MySQL not ready yet..."
-                            docker compose logs mysql --tail=5 || true
-                            sleep $RETRY_INTERVAL
-                            if [ $i -eq $MAX_RETRIES ]; then
-                                echo "ERROR: MySQL failed to start after $MAX_RETRIES attempts"
-                                exit 1
-                            fi
-                        done
-                        
-                        echo "Verifying services..."
-                        docker compose ps
-                        sleep 10
+    steps {
+        dir('devops-exam-app-master/backend') {
+            sh '''
+                #!/bin/bash
+                echo "Current working directory:"
+                pwd
+                echo "Directory contents:"
+                ls -la
+                
+                echo "Stopping any existing containers..."
+                docker compose down --remove-orphans || true
+                
+                echo "Building and starting containers..."
+                docker compose up -d --build || { echo "Failed to start containers"; exit 1; }
+                
+                echo "Waiting for MySQL to be ready..."
+                MAX_RETRIES=24
+                RETRY_INTERVAL=5
+                for i in $(seq 1 $MAX_RETRIES); do
+                    if docker compose exec -T mysql mysqladmin ping -uroot -prootpass --silent; then
+                        echo "MySQL is ready!"
+                        break
+                    fi
+                    echo "Attempt $i/$MAX_RETRIES: MySQL not ready yet..."
+                    docker compose logs mysql --tail=5 || true
+                    sleep $RETRY_INTERVAL
+                    if [ $i -eq $MAX_RETRIES ]; then
+                        echo "ERROR: MySQL failed to start after $MAX_RETRIES attempts"
+                        exit 1
+                    fi
+                done
+                
+                echo "Verifying services..."
+                docker compose ps
+                sleep 10
                     '''
                 }
             }
