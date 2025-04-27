@@ -60,12 +60,15 @@ pipeline {
 
         // Added Docker Scout Image Analysis
         stage('Docker Scout Image Analysis') {
-            steps {
-                script {
-                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
-                        sh "docker-scout quickview ${DOCKER_IMAGE}"
-                        sh "docker-scout cves ${DOCKER_IMAGE}"
-                        sh "docker-scout recommendations ${DOCKER_IMAGE}"
+    steps {
+        script {
+            // First ensure Docker is updated
+            sh 'sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli'
+            
+            withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                sh "docker scout quickview ${DOCKER_IMAGE}"
+                sh "docker scout cves ${DOCKER_IMAGE}"
+                sh "docker scout recommendations ${DOCKER_IMAGE}"
                     }
                 }
             }
