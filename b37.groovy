@@ -69,41 +69,25 @@ pipeline {
             }
         }
 
-        stage('Deploy with Docker Compose') {
-    steps {
-        dir('devops-exam-app-master/backend') {
-            sh '''
-                #!/bin/bash
-                echo "Current working directory:"
-                pwd
-                echo "Directory contents:"
-                ls -la
-                
-                echo "Stopping any existing containers..."
+         stage('Deploy with Docker Compose') {
+            steps {
+                sh '''
+                # Clean up any existing containers
                 docker compose down --remove-orphans || true
                 
-                echo "Building and starting containers..."
-                docker compose up -d --build || { echo "Failed to start containers"; exit 1; }
+                # Start services with build
+                docker compose up -d --build
                 
+                # Wait for MySQL to be ready
                 echo "Waiting for MySQL to be ready..."
-                MAX_RETRIES=24
-                RETRY_INTERVAL=5
-                for i in $(seq 1 $MAX_RETRIES); do
-                    if docker compose exec -T mysql mysqladmin ping -uroot -prootpass --silent; then
-                        echo "MySQL is ready!"
-                        break
-                    fi
-                    echo "Attempt $i/$MAX_RETRIES: MySQL not ready yet..."
-                    docker compose logs mysql --tail=5 || true
-                    sleep $RETRY_INTERVAL
-                    if [ $i -eq $MAX_RETRIES ]; then
-                        echo "ERROR: MySQL failed to start after $MAX_RETRIES attempts"
-                        exit 1
-                    fi
-                done
+                timeout 120s bash -c '
+                while ! docker compose exec -T mysql mysqladmin ping -uroot -prootpass --silent;
+                do 
+                    sleep 5;
+                    docker compose logs mysql --tail=5 || true;
+                done'
                 
-                echo "Verifying services..."
-                docker compose ps
+                # Additional wait for full initialization
                 sleep 10
                     '''
                 }
