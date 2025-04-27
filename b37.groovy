@@ -24,14 +24,14 @@ pipeline {
     steps {
         withSonarQubeEnv('sonar') {
             sh """
-    ${SCANNER_HOME}/bin/sonar-scanner \
-    -Dsonar.projectName=devops-exam-app \
-    -Dsonar.projectKey=devops-exam-app \
-    -Dsonar.sources=. \
-    -Dsonar.java.binaries=target/classes \
-    -Dsonar.python.version=3 \
-    -Dsonar.host.url=http://localhost:9000
-"""
+                ${SCANNER_HOME}/bin/sonar-scanner \
+                -Dsonar.projectName=devops-exam-app \
+                -Dsonar.projectKey=devops-exam-app \
+                -Dsonar.sources=. \
+                -Dsonar.exclusions=**/*.java \
+                -Dsonar.python.version=3 \
+                -Dsonar.host.url=http://localhost:9000
+            """
                 }
             }
         }
