@@ -57,32 +57,7 @@ pipeline {
             }
         }
 
-        stage('Docker Scout Image Analysis') {
-            steps {
-                script {
-                    // Alternative Docker Scout installation method
-                    sh '''
-                        # Create local bin directory if it doesn't exist
-                        mkdir -p $HOME/.local/bin
-                        
-                        # Download and install docker-scout
-                        curl -fsSL https://github.com/docker/scout-cli/releases/latest/download/docker-scout-linux-amd64 -o docker-scout
-                        chmod +x docker-scout
-                        mv docker-scout $HOME/.local/bin/
-                        
-                        # Add to PATH if not already there
-                        echo "$HOME/.local/bin" >> $GITHUB_PATH
-                        
-                        # Verify installation
-                        docker-scout --version || echo "Docker Scout installation failed"
-                    '''
-                    
-                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
-                        sh """
-                            $HOME/.local/bin/docker-scout quickview ${DOCKER_IMAGE}
-                            $HOME/.local/bin/docker-scout cves ${DOCKER_IMAGE}
-                            $HOME/.local/bin/docker-scout recommendations ${DOCKER_IMAGE}
-                        """
+        
                     }
                 }
             }
