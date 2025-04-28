@@ -1,2 +1,2 @@
 SOURCE_DIR = /home/ubuntu/
-DEST_DIR  = 
+DEST_DIR = /tmp/backup_dir
