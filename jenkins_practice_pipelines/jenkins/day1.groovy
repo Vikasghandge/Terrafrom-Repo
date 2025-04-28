@@ -16,6 +16,8 @@ pipeline {
                 'tesing here'
             }
         }
-        stage('')
+        stage('Deploy') {
+            steps
+        }
     }
 }
