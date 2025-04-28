@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'your git hub repo '
+                git 'your git hub repo url and branch name'
             }
         }
+        stage
     }
 }
