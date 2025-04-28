@@ -11,7 +11,9 @@ pipeline {
                 git url: 'your git repo url'
             }
         }
-        stage('Docker build')
+        stage('Build Docker Image') {
+            
+        }
     }
 }
 
