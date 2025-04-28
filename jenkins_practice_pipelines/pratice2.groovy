@@ -13,8 +13,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                'your test like p'
+                'your test like pom.xml url'
             }
         }
+        stage
      }
 }
