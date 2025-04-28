@@ -38,6 +38,7 @@ pipeline {
                 script {
                     sh '''
                     kubectl apply -f deployment.yml
+                    kubect
                     '''
                 }
             }
