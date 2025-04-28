@@ -13,7 +13,7 @@ pipeline {
         }
         stage('push image') {
             steps {
-                withCredentials[(user)]
+                withCredentials[(userpassword)]
             }
         }
     }
