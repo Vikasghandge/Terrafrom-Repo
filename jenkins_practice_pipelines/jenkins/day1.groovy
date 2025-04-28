@@ -6,5 +6,6 @@ pipeline {
                 git url: 'url of your git repo'
             }
         }
+        stage('B')
     }
 }
