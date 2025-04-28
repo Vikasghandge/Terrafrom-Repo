@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'deploying on '
+                sh 'deploying on development env'
             }
         }
     }
