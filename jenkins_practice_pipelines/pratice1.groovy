@@ -1,6 +1,8 @@
 pipeline {
     agent any
     stgaes {
-        stage {}
+        stage ('Checkout') {
+            
+        }
     }
 }
