@@ -39,7 +39,7 @@ pipeline {
                     sh '''
                     kubectl apply -f deployment.yml
                     kubectl get pods
-                    kubect
+                    kubectl get svc
                     '''
                 }
             }
