@@ -5,6 +5,7 @@ pipeline {
             steps {
                 git url: 'url git repo url'
             }
-        }     
+        }
+             
     }
 }
