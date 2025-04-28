@@ -6,7 +6,7 @@ pipeline {
         IMAGE_NAME = 'ghandgevikas/nginx:latest'
     }
     stages {
-        
+        stage('Check')
     }
 }
 
