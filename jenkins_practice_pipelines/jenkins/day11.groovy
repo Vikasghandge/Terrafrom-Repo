@@ -2,6 +2,6 @@ pipeline {
     angent any
 
     environment {
-        DOCKERHUB_CREDENTIALS 
+        DOCKERHUB_CREDENTIALS = 'docker-hub-cred'
     }
 }
