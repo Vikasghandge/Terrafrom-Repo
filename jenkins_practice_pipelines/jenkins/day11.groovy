@@ -33,7 +33,9 @@ pipeline {
                 }
             }
         }
-        stage('Deploying on k8s ')
+        stage('Deploying on k8s Cluster') {
+            
+        }
     }
 }
 
