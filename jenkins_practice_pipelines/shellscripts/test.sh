@@ -1,1 +1,1 @@
-SOURCE_DIR
+SOURCE_DIR = /home
