@@ -11,6 +11,6 @@ pipeline {
                 sh ' your image '
             }
         }
-        stage()
+        stage('push image')
     }
 }
