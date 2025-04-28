@@ -13,7 +13,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                
+                'tesing here'
             }
         }
     }
