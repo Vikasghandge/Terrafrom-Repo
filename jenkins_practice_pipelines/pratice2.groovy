@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git ''
+                git 'your git hub repo '
             }
         }
     }
