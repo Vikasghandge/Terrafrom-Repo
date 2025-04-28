@@ -2,6 +2,6 @@ pipeline {
     angent any
 
     environment {
-        DOCKER_HUB
+        DOCKERHUB_CREDENTIALS 
     }
 }
