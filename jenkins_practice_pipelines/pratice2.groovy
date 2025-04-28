@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'we are deploying '
+                sh 'we are deploying in prod'
             }
         }
      }
