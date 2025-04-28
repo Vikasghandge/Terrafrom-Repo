@@ -1,5 +1,7 @@
 pipeline {
     angent any
 
-    envir
+    environment {
+        
+    }
 }
