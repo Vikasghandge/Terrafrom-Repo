@@ -16,7 +16,7 @@ pipeline {
                 withCredentials[(userpassword(dockerhub-credentialsId: usernameVariable, '$DOCKER_USER', passwordVariable, 'DOCKER_PASS'))] {
                     sh ''' 
                     echo '$DOCKER_PASS | docker login -u '$DOCKER_USER'
-                    docker tag image_name/
+                    docker tag image_name/tag:
                     '''
                 }
             }
