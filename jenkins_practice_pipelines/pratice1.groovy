@@ -13,7 +13,7 @@ pipeline {
         }
         stage('push image') {
             steps {
-                withCredentials[(userpassword(dockerhub-credentialsId: usernameVariable, $DOCKER))]
+                withCredentials[(userpassword(dockerhub-credentialsId: usernameVariable, $DOCKER_USER, ))]
             }
         }
     }
