@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'your image'
             }
-        }     
+        }
+             
     }
 }
