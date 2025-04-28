@@ -29,7 +29,7 @@ pipeline {
         stage('Docker Push Image') {
             steps {
                 script {
-                    sh 'docker push '
+                    sh 'docker push $DOCKER_IMAGE'
                 }
             }
         }
