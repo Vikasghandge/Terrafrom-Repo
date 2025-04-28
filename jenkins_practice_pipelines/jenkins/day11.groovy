@@ -3,5 +3,6 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = 'docker-hub-cred'
+        IMAGE_NAME
     }
 }
