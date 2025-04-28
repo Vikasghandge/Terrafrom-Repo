@@ -26,8 +26,10 @@ pipeline {
                 }
             }
         }
-        stage('Docker Push Image'){
-            
+        stage('Docker Push Image') {
+            steps {
+                sh 
+            }
         }
     }
 }
