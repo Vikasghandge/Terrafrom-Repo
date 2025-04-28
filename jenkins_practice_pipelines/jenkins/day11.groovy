@@ -1,3 +1,4 @@
 pipeline {
-    angent
+    agent any 
+    
 }
