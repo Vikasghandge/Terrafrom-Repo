@@ -1,1 +1,2 @@
-SOURCE_DIR = /home
+SOURCE_DIR = /home/ubuntu/
+DIST
