@@ -3,7 +3,7 @@ pipeline {
     stgaes {
         stage ('Checkout') {
             steps {
-                git
+                git url: 
             }
         }
     }
