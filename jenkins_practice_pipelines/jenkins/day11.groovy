@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Login to DockerHub') {
             steps {
-                withCredentilas[]
+                withCredentilas()
             }
         }
     }
