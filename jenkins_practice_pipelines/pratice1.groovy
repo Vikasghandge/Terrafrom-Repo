@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                your
+                sh ' 
             }
         }
     }
