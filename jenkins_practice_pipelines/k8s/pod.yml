@@ -7,7 +7,7 @@ spec:
   - name: nginx
     image: nginx:latest
   ports:
-   containerport: 80
+  - containerport: 80
 
 apiVersion: v1
 kind: Pod
