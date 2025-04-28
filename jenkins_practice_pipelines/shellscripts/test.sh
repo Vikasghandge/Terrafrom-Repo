@@ -1,3 +1,3 @@
 SOURCE_DIR = /home/ubuntu/
 DEST_DIR = /tmp/backup_dir
-BACKUP_NAME = 
+BACKUP_NAME = "$backup
