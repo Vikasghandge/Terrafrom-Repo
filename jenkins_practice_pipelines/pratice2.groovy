@@ -6,6 +6,10 @@ pipeline {
                 git 'your git hub repo url and branch name'
             }
         }
-        stage('Build')
+        stage('Build') {
+            steps {
+                
+            }
+        }
     }
 }
