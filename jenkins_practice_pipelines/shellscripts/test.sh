@@ -1,2 +1,2 @@
 SOURCE_DIR = /home/ubuntu/
-DIST
+DEST_DIR  = 
