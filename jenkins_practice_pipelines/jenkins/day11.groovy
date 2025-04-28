@@ -35,8 +35,8 @@ pipeline {
         }
         stage('Deploying on k8s Cluster') {
             steps {
-                script {
-
+                scripts {
+                    
                 }
             }
         }
