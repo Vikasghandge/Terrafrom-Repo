@@ -1,16 +1,1 @@
-pipeline {
-    agent any 
-    stages {
-        stage('Checkout') {
-            steps {
-                git url: 'url git repo url'
-            }
-        }
-        stage('Docker Build') {
-            steps {
-                sh 'your image'
-            }
-        }
-             
-    }
-}
+pipeline
