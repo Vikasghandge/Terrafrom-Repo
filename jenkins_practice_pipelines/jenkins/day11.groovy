@@ -6,6 +6,6 @@ pipeline {
                 git url: 'url git repo url'
             }
         }
-             
+        stage('')     
     }
 }
