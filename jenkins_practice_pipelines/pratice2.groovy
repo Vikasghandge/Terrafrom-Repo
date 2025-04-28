@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                'yp'
+                'your test like p'
             }
         }
      }
