@@ -17,7 +17,7 @@ pipeline {
                     sh ''' 
                     echo '$DOCKER_PASS | docker login -u '$DOCKER_USER'
                     docker tag image_name/tag:tagname
-                    docker push image_name/docker_registry
+                    docker push image_name/docker_registry_name
                     '''
                 }
             }
