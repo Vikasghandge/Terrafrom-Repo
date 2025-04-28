@@ -6,6 +6,8 @@ pipeline {
                 git url: ' your git repo url '
             }
         }
-        stage('Build Image')
+        stage('Build Image') {
+            
+        }
     }
 }
