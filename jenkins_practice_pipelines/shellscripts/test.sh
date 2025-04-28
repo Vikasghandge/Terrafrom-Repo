@@ -8,4 +8,4 @@ echo "backup created: $BACKUP_NAME in $DEST_DIR"
 
 
 * * * * *
-*/5  1
+*/5 * 1
