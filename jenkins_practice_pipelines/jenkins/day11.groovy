@@ -14,7 +14,7 @@ pipeline {
         stage('Build Docker Image') {
             stpes {
                 script {
-                    sh 'docker build -t $'
+                    sh 'docker build -t $IMAGE_NAME'
                 }
             }
         }
