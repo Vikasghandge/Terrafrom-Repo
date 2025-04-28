@@ -16,6 +16,8 @@ pipeline {
                 'your test like pom.xml url'
             }
         }
-        stage
+        stage('Deploy') {
+            
+        }
      }
 }
