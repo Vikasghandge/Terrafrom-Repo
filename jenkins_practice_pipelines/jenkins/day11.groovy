@@ -33,7 +33,7 @@ pipeline {
                 }
             }
         }
-        stage('')
+        stage('Deploying on k8s ')
     }
 }
 
