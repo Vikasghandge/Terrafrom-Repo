@@ -3,4 +3,9 @@ kind: Pod
 metadata: 
   name: nginx
 spec: 
-  con  
+  containers:
+    - image:  image
+    name:  my
+    env:
+      - name:  ENVVARNAME
+        value:  ENVVARVALUE  
