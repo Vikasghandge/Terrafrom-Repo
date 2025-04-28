@@ -6,4 +6,7 @@ spec:
   containers:
   - name: nginx
     image: nginx:latest
-    
+  ports:
+  - name:  Port Name
+    port:  Port
+    protocol: TCP  
