@@ -6,6 +6,10 @@ pipeline {
                 git url: 'git repo ulr'
             }
         }
-        stage('Build')
+        stage('Build') {
+            steps {
+                
+            }
+        }
     }
 }
