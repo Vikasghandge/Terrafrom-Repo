@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name:  my-app
   labels:
-    name:  my-name
+    name:  my-app
 spec:
   strategy:
     rollingUpdate:
