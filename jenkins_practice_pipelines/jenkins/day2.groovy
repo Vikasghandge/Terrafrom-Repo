@@ -16,6 +16,8 @@ pipeline {
                 'pox.xml file path'
             }
         }
-        stage('')
+        stage('Deploy') {
+            
+        }
     }
 }
