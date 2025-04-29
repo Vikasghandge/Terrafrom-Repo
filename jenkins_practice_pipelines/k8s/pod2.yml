@@ -13,6 +13,8 @@ spec:
     metadata: 
      labels: 
       app: nginx
-    spec:     
+    spec: 
+     containers: 
+     - name     
 
   
