@@ -2,6 +2,8 @@ pipeline {
     agent any 
     environment = 'docker-hub'
     stages {
-        stage()
+        stage('Checkout') {
+            
+        }
     }
 }
