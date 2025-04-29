@@ -2,4 +2,5 @@ apiVersion: apps/v1
 kind: deployment 
 metadata: 
  name: my-app
-spec:  
+spec: 
+ - name: 
