@@ -13,8 +13,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                'pox.'
+                'pox.xml file path'
             }
         }
+        
     }
 }
