@@ -4,4 +4,5 @@ metadata:
  name: my-app
 spec: 
  stratigy:
- name: Rollin
+ name: RollingUpdate 
+ max
