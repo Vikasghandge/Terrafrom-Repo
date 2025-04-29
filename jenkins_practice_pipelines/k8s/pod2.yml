@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - image:  nginx:latest
-        name:  my-name
+        name:  my-app
         resources:
           requests:
             cpu: "20m"
