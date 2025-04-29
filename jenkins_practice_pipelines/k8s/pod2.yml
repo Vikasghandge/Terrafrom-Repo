@@ -3,4 +3,4 @@ kind: deployment
 metadata: 
  name: my-app
 spec: 
- - name:  
+ stra
