@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               sh ' echo "deploying into env ' '
+               sh ' echo "deploying into env " '
             }
         }
     }
