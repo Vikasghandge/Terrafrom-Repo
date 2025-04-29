@@ -17,7 +17,7 @@ spec:
         name:  my-app
     spec:
       containers:
-      - image:  ipedrazas/docmock
+      - image:  nginx:latest
         name:  my-name
         resources:
           requests:
