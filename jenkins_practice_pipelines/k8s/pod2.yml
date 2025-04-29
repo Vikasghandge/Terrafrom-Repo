@@ -3,4 +3,8 @@ kind: deployment
 metadata: 
  name: my-app
 spec: 
- stra
+ stratigy:
+ name: rollingUpdate:
+   maxSurge: 1
+   maxUnavailable: 1
+ type: RollingUpdate
