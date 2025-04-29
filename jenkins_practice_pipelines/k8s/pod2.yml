@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name:  my-name
+  name:  my-app
   labels:
     name:  my-name
 spec:
