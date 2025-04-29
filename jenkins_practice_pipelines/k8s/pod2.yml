@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        name:  m
+        name:  my-app
     spec:
       containers:
       - image:  ipedrazas/docmock
