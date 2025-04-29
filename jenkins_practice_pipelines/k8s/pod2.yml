@@ -4,7 +4,4 @@ metadata:
  name: my-app
 spec: 
  stratigy:
- name: rollingUpdate:
-   maxSurge: 1
-   maxUnavailable: 1
- type: RollingUpdate
+ name: Rollin
