@@ -1,4 +1,5 @@
 pipeline {
     agent any 
-    environment = 
+    environment = 'docker-hub'
+    stages
 }
