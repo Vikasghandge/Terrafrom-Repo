@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git
+                git url: git repo ulr
             }
         }
     }
