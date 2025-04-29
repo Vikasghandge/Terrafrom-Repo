@@ -4,7 +4,8 @@ metadata:
  name: my-app
 spec: 
  stratigy:
- name: RollingUpdate 
- maxsurge: 25%
- maxunavailable: 25%
+ - name: RollingUpdate 
+   maxsurge: 25%
+   maxunavailable: 25%
+   
   
