@@ -3,7 +3,9 @@ pipeline {
     environment = 'docker-hub'
     stages {
         stage('Checkout') {
-            
+            steps {
+                
+            }
         }
     }
 }
