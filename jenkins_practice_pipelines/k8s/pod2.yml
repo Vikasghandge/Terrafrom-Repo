@@ -6,4 +6,4 @@ spec:
  stratigy:
  name: RollingUpdate 
  maxsurge: 25%
- maxun
+ maxunavailable: 25
