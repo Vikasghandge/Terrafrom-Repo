@@ -12,7 +12,9 @@ pipeline {
             }
         }
         stage('Test') {
-            steps
+            steps {
+                'pox.'
+            }
         }
     }
 }
