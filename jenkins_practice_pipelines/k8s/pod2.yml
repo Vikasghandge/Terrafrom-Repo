@@ -5,4 +5,5 @@ metadata:
 spec: 
  stratigy:
  name: RollingUpdate 
- maxsurge: 
+ maxsurge: 25%
+ max
