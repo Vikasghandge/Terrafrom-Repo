@@ -32,6 +32,6 @@ pipeline {
                 }
             }
         }
-        
+        stgae('Deploy in Kubernete')
     }
 }
