@@ -24,6 +24,6 @@ pipeline {
                 }
             }
         }
-        stage()
+        stage('')
     }
 }
