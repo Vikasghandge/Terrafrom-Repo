@@ -33,7 +33,11 @@ pipeline {
             }
         }
         stgae('Deploy in Kubernete') {
-            steps {}
+            steps {
+                script {
+                    sh 'kubectl '
+                }
+            }
         }
     }
 }
