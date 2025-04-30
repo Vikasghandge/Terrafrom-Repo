@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([usernamepassword(credentials: 'DOCKERHUB-CREDENTIALS', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                        sh 'echo '
+                        sh 'echo "'
                     }
                 }
             }
