@@ -35,7 +35,7 @@ pipeline {
         stgae('Deploy in Kubernete') {
             steps {
                 script {
-                    sh 'kubectl '
+                    sh 'kubectl apply -f deployment.yml'
                 }
             }
         }
