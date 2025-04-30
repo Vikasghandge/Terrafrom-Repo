@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker tag '$IMAGE_NAME/docker registeryusername''
-                    sh 'docker push '
+                    sh 'docker push registryusername/'
                 }
             }
         }
