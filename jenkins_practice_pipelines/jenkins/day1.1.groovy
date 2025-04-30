@@ -28,6 +28,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker tag '$IMAGE_NAME/docker registeryusername''
+                    sh ''
                 }
             }
         }
