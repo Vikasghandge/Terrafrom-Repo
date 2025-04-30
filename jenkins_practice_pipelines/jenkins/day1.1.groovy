@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment = 'docker-hub'
-    IMAGE_NAME = 
+    IMAGE_NAME = nginx:latest
     stages {
         stage('Checkout') {
             steps {
