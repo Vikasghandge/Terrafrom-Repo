@@ -15,6 +15,6 @@ pipeline {
                 }
             }
         }
-        stage()
+        stage('login ')
     }
 }
