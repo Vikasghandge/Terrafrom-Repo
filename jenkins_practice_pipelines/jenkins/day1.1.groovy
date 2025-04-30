@@ -15,6 +15,10 @@ pipeline {
                 }
             }
         }
-        stage('Login Into DockerHub')
+        stage('Login Into DockerHub') {
+            steps {
+                scr
+            }
+        }
     }
 }
