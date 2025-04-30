@@ -18,7 +18,7 @@ pipeline {
         stage('Login Into DockerHub') {
             steps {
                 script {
-                    withCredentials([usernamepassword(credentials: 'DOCKERHUB-CREDENTIALS, usernameVariable: 'DOCKER_USER', passwordVariable: '$DOCKER_PASS')])
+                    withCredentials([usernamepassword(credentials: 'DOCKERHUB-CREDENTIALS, usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')])
                 }
             }
         }
