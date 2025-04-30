@@ -27,7 +27,7 @@ pipeline {
         stage('Push into DockerHub') {
             steps {
                 script {
-                    sh 'docker tag $'
+                    sh 'docker tag '$IMAGE'
                 }
             }
         }
