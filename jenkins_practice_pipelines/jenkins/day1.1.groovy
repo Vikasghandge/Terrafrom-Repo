@@ -18,7 +18,7 @@ pipeline {
         stage('Login Into DockerHub') {
             steps {
                 script {
-                    with
+                    withCredentials
                 }
             }
         }
