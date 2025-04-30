@@ -24,6 +24,6 @@ pipeline {
                 }
             }
         }
-        stage('P')
+        stage('Push into Dokcer')
     }
 }
