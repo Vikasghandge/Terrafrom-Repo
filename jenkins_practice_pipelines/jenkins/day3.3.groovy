@@ -14,9 +14,9 @@ pipeline {
                 sh 'docker build -t $DOCKER_IMAGE:$TAG .'
             }
         }
-        stage('Docker Push') {
+        stage('Docker Login') {
             steps {
-
+            
             }
         }
 
