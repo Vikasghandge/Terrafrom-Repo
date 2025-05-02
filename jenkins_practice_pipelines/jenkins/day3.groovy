@@ -11,5 +11,6 @@ pipeline {
                 sh 'mvn install clean'
             }
         }
+        
     }
 }
