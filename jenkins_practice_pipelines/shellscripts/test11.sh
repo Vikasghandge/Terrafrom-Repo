@@ -4,4 +4,4 @@ DAYS_TO_KEEP =30
 DATE =$(date +"%y-%m-%d-%H-%M-%S")
 BACKUP_NAME="bakup_$DATE.tar.gz"
 
-mkdir -p "$DEST_
+mkdir -p "$DEST_DIR"
