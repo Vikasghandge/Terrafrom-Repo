@@ -22,7 +22,9 @@ pipeline {
             }
         }
         stage('Docker Push') {
-            
+            steps {
+                sh 
+            }
         }
 
     }
