@@ -1,5 +1,5 @@
 SOURCE_DIR = "/home/ubuntu"
-DEST_DIR = 
+DEST_DIR = "/tmp/"
 DAYS_TO_KEEP =
 DATE =
 BACKUP_NAME
