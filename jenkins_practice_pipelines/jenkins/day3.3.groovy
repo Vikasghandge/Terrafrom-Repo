@@ -6,8 +6,9 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                check
+                checkout scm 'your repo url'
             }
         }
+        
     }
 }
