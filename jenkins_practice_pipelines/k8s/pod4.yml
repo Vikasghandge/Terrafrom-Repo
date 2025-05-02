@@ -4,8 +4,4 @@ metadata:
   name: nginx 
 spec:
 - containers:
-  - image:  image
-  name:  my-name
-  env:
-    - name:  ENVVARNAME
-      value:  ENVVARVALUE  
+    
