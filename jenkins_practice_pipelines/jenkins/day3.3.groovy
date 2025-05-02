@@ -1,4 +1,4 @@
 pipeline {
     agent any 
-    DOCKER_IMAGE = 
+    DOCKER_IMAGE = vikas/nginx
 }
