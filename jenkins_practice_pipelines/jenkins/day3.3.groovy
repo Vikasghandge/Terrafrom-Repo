@@ -11,9 +11,10 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                sh 'docker build -t $DOCKER_IMAGE:$TAG'
+                sh 'docker build -t $DOCKER_IMAGE:$TAG .'
             }
         }
+        
 
     }
 }
