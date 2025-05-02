@@ -9,7 +9,9 @@ pipeline {
                 checkout scm 'your repo url'
             }
         }
-        stage('Build Image')
-        
+        stage('Build Image') {
+            
+        }
+
     }
 }
