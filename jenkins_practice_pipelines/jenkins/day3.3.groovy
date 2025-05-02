@@ -9,6 +9,6 @@ pipeline {
                 checkout scm 'your repo url'
             }
         }
-        
+        stage('')
     }
 }
