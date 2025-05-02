@@ -17,6 +17,6 @@ module "vpc" {
   }
 
   private_subnet_tags = {
-    "kubenets.io/role/internal-elb" = 1
+    "kubenetes.io/role/internal-elb" = 1
   }
 }
