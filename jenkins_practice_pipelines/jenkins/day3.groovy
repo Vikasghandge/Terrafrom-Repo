@@ -16,6 +16,10 @@ pipeline {
                 'testing steps'
             }
         }
-        stage('Deploy')
+        stage('Deploy') {
+            steps {
+                
+            }
+        }
     }
 }
