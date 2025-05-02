@@ -37,7 +37,7 @@ module "eks" {
       capacity_type = "SPOT"
 
       tags = {
-        ExtraTag = "helloWorld"
+        ExtraTag = "hello,World"
       }
     }
   }
