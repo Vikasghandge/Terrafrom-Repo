@@ -9,7 +9,7 @@ pipeline {
         stage('Clone the Code'){
             steps{
                 script{
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/KastroVKiran/Jenkins-Terraform-EKS.git']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Vikasghandge/Terrafrom-Repo.git']])
                 }
             }
         }
