@@ -6,6 +6,8 @@ pipeline {
                 git url: 'your git repo url and branch name'
             }
         }
-        stage('')
+        stage('Build') {
+            
+        }
     }
 }
