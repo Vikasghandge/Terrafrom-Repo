@@ -3,5 +3,7 @@ pipeline {
     DOCKER_IMAGE = vikas/nginx
     TAG = latest 
 
-    stages
+    stages {
+        stage('')
+    }
 }
