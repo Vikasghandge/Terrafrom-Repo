@@ -9,4 +9,4 @@ mkdir -p "$DEST_DIR"
 tar -cvf "$DEST_DIR/$BAKUP_NAME" -c "SOURCE_DIR" .
 
 # find "$DEST_DIR" -name "backup_*.tar.gz" -type f -mtime +$DAYS_TO_KEEP -delete
-find "DEST_DIR" -name "backup_*.tar"
+find "DEST_DIR" -name "backup_*.tar.gz" -type -
