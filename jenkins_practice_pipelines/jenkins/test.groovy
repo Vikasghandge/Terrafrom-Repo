@@ -45,7 +45,7 @@ pipeline {
             steps{
                 script{
                     dir('eks_cluster_setup'){
-                         sh 'terraform $action --auto-approve'
+                         sh 'terraform apply --auto-approve'
                     }
                 }
             }
