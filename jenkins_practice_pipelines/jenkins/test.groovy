@@ -25,7 +25,7 @@ pipeline {
         stage('Terraform Validation'){
             steps{
                 script{
-                    dir('terraform'){
+                    dir('eks-cluster-setup'){
                          sh 'terraform validate'
                     }
                 }
