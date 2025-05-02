@@ -6,4 +6,4 @@ BACKUP_NAME="bakup_$DATE.tar.gz"
 
 mkdir -p "$DEST_DIR"
 
-tar -cvf "$DEST_DIR/BAKUPNAME"
+tar -cvf "$DEST_DIR/$BAKUP_NAME"
