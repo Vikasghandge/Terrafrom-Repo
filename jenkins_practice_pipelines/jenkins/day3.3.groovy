@@ -1,4 +1,5 @@
 pipeline {
     agent any 
-    environment = 'docker-hub'
+    environment = 'docker-hub-cred'
+    
 }
