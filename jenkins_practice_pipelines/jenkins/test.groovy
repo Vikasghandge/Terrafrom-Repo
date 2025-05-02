@@ -44,7 +44,7 @@ pipeline {
         stage('Create/Destroy EKS cluster'){
             steps{
                 script{
-                    dir('eks-cluster-setup'){
+                    dir('eks_cluster_setup'){
                          sh 'terraform $action --auto-approve'
                     }
                 }
