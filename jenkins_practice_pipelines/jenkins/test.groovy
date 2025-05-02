@@ -34,7 +34,7 @@ pipeline {
         stage('Infrastructure Checks'){
             steps{
                 script{
-                    dir('terraform'){
+                    dir('eks-cluster-setup'){
                          sh 'terraform plan'
                     }
                     input(message: "Approve?", ok: "proceed")
