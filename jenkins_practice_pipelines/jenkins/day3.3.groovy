@@ -17,7 +17,7 @@ pipeline {
         stage('Docker Login') {
             steps {
                  withCredentilas([usernamepassword(credentialsId: $DOCKER_CREDENTIALS, usernameVariable: DOCKERHUB_USER, passwordVariable: DOCKER_PASSS)]) {
-                    
+                    echo '$'
                  }
             }
         }
