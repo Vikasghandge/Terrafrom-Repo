@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Docker Login') {
             steps {
-                 withCredentilas([usernamepassword(credentialsId: $DOCKER_CREDENTIALS, usernameVariable: )])
+                 withCredentilas([usernamepassword(credentialsId: $DOCKER_CREDENTIALS, usernameVariable: DOCKER)])
             }
         }
 
