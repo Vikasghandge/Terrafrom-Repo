@@ -15,7 +15,9 @@ pipeline {
             }
         }
         stage('Dokcer Push') {
-            
+            steps {
+                
+            }
         }
 
     }
