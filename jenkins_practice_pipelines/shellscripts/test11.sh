@@ -1,4 +1,4 @@
-SOURCE_DIR = 
+SOURCE_DIR = "/home/ub
 DEST_DIR =
 DAYS_TO_KEEP =
 DATE =
