@@ -1,6 +1,6 @@
 pipeline {
     agent any 
-    DOCKER_IMAGE = vikas/nginx
+    DOCKER_IMAGE = ghandgevikas/nginx
     TAG = latest 
 
     stages {
