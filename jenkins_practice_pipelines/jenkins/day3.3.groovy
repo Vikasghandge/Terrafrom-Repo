@@ -14,7 +14,9 @@ pipeline {
                 sh 'docker build -t $DOCKER_IMAGE:$TAG .'
             }
         }
-        
+        stage('Dokcer Push') {
+            
+        }
 
     }
 }
