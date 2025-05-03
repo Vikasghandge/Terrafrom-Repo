@@ -1,1 +1,1 @@
-find 
+find /path/of/your
