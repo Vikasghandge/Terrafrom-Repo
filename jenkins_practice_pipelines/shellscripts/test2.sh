@@ -10,3 +10,4 @@ tar -cvf "$DEST_DIR/$BACKUP_NAME" -c "$SOURCE_DIR" # compressing file from sourc
 
 find $DEST_DIR -name "backup_*.tar.gz" -type f -mtime +DAYS_TO_KEEP -delete
 
+
