@@ -8,6 +8,6 @@ mkidr -p $DEST_DIR
 
 tar -cvf "$DEST_DIR/$BACKUP_NAME" -c "$SOURCE_DIR" # compressing file from source dir to dest dir using backup name
 
-find $DEST_DIR -name "backup_*.tar.gz" -type f -mtime +DAYS_TO_KEEP -delete # search the file location of dest file which 
+find $DEST_DIR -name "backup_*.tar.gz" -type f -mtime +DAYS_TO_KEEP -delete # search the file location of dest file which u want to delete backups
 
 
