@@ -18,4 +18,5 @@ pvt_subnet -
 pub_subnet -
 pub_rt -
 pvt_rt -
-nat_ga
+nat_gateway
+in
