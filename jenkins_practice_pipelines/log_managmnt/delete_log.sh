@@ -1,1 +1,1 @@
-find /path/of/your/logfile -type f -name "log.*" 
+find /path/of/your/logfile -type f -name "log.*" -mtime 
