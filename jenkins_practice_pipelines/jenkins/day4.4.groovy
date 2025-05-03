@@ -10,6 +10,8 @@ pipeline {
                 git url: 'url of your git repo and branch name'
             }
         }
-        stage('Build Docker Image')
+        stage('Build Docker Image') {
+            
+        }
     }
 }
