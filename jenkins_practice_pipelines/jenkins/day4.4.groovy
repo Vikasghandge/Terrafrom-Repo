@@ -2,5 +2,5 @@
 
 pipeline {
     agent any 
-    en
+    IMAGE
 }
