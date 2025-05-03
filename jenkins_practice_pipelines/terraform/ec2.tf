@@ -3,4 +3,6 @@ provider "aws" {
 }
 
 # Get latest ubuntu AMI
-data "aws_ami" "ubuntu"
+data "aws_ami" "ubuntu" {
+    most_recent = false
+}
