@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Docker push registery') {
             steps {
-                sh 'docker push '
+                sh 'docker push $'
             }
         }
     }
