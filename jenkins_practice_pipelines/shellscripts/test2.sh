@@ -6,5 +6,5 @@ BACKUP_NAME= "$bakcup_$DATE.tar.gz" #name of our
 
 mkidr -p $DEST_DIR
 
-tar -cvf "$DEST_DIR/BACKUP_NAME" -c "SOURCE_DIR" # compressing file from source dir to 
+tar -cvf "$DEST_DIR/BACKUP_NAME" -c "SOURCE_DIR" # compressing file from source dir to dest dir using backup
 
