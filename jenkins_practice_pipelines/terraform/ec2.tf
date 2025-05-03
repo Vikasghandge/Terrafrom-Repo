@@ -21,4 +21,4 @@ pvt_rt -
 nat_gateway
 internet_gateway
 elp -
-subnet
+subnet_assoca
