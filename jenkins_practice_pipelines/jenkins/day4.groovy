@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Chekout code from scm') {
             steps {
-                git url: ''
+                git url: 'your git repo url'
             }
         }
     }
