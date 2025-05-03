@@ -7,6 +7,9 @@ resource "aws_instance" "my-ec2" {
     instance_type = "t2.medium"
     key_name = "vikas.key"
 
-
     
+}
+
+output "aws" {
+  
 }
