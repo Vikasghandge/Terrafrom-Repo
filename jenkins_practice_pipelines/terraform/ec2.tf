@@ -19,4 +19,6 @@ pub_subnet -
 pub_rt -
 pvt_rt -
 nat_gateway
-internet_
+internet_gateway
+elp -
+subnet
