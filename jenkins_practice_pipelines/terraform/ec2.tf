@@ -4,5 +4,6 @@ provider "aws" {
 
 # Get latest ubuntu AMI
 data "aws_ami" "ubuntu" {
-    most_recent = false
+    most_recent = true
+    owners = [ "value" ]
 }
