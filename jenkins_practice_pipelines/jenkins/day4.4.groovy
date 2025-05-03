@@ -1,1 +1,1 @@
-# pipeline to build docker image 
+# pipeline to build docker image than tag and push it into the 
