@@ -6,7 +6,9 @@ pipeline {
     TAG = latest
     stages {
         stage ('Chekout') {
-            steps 
+            steps {
+                git url
+            }
         }
     }
 }
