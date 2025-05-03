@@ -5,4 +5,4 @@ kind: Pod
 metadata: 
   name: nginx
 spec: 
- con  
+ containers:  
