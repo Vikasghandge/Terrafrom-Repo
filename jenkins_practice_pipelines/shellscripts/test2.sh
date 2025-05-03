@@ -1,4 +1,4 @@
-SOURCE_DIR= "/home/ubuntu"
+SOURCE_DIR= "/home/ubuntu"  #this is 
 DEST_DIR= "/tmp/backup_dir"
 DAYS_TO_KEEP=30
 DATE =$(date +"%y-%m-%d-%H-%M-%S")
