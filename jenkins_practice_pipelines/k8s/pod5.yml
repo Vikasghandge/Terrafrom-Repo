@@ -1,4 +1,6 @@
 #simple pod yml file
 
 apiVersion: v1 
-kind: pod
+kind: Pod 
+metadata: 
+  
