@@ -3,4 +3,4 @@ provider "aws" {
 }
 
 # Get latest ubuntu AMI
-data "aws"
+data "aws_ami" "ubu"
