@@ -17,4 +17,5 @@ vpc - name
 pvt_subnet - 
 pub_subnet -
 pub_rt -
-pvt-
+pvt_rt -
+nat_ga
