@@ -8,5 +8,5 @@ mkidr -p $DEST_DIR
 
 tar -cvf "$DEST_DIR/$BACKUP_NAME" -c "$SOURCE_DIR" # compressing file from source dir to dest dir using backup name
 
-find $DEST_DIR 
+find $DEST_DIR -name 
 
