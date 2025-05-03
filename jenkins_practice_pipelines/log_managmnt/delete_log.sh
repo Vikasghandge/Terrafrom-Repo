@@ -1,1 +1,1 @@
-find /path/of/your
+find /path/of/your/logfile
