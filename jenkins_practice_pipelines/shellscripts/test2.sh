@@ -6,3 +6,5 @@ BACKUP_NAME= "$bakcup_$DATE.tar.gz" #name of our
 
 mkidr -p $DEST_DIR
 
+
+
