@@ -27,4 +27,4 @@ pipeline {
 }
 
 # mvn steps to build code
-# checkout --> compile --> test --> build -->
+# checkout --> compile --> test --> build --> deploy --> install
