@@ -10,6 +10,6 @@ data "aws_ami" "ubuntu" {
 
 filter {
   name = "name"
-  
+  values = [ "value" ]
 }
 }
