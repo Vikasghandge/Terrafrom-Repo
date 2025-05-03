@@ -19,4 +19,4 @@ pub_subnet -
 pub_rt -
 pvt_rt -
 nat_gateway
-in
+internet_
