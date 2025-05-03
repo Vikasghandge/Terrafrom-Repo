@@ -14,5 +14,6 @@ resource "aws_instance" "my-ec2" {
 ##########
 
 vpc - name 
-pvt_subnet - 192.16
+pvt_subnet - 
 pub_subnet -
+pub_tr
