@@ -5,5 +5,5 @@ kind: Pod
 metadata: 
   name: nginx
 spec: 
- containers:
-- name:   
+  containers:
+   - name:   
