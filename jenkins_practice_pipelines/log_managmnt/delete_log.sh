@@ -1,1 +1,1 @@
-find /path/of/your/logfile
+find /path/of/your/logfile -type f 
