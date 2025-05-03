@@ -2,5 +2,5 @@
 
 pipeline {
     agent any 
-    IMAGE
+    IMAGE_NAME = 
 }
