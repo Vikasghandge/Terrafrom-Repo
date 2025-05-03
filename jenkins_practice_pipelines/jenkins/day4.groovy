@@ -4,7 +4,9 @@ pipeline {
     agent any 
     stages {
         stage('Chekout code from scm') {
-            steps
+            steps {
+                git url: ''
+            }
         }
     }
 }
