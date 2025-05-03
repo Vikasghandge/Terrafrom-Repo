@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Chekout') {
             steps {
-                git url
+                git url: 'url of '
             }
         }
     }
