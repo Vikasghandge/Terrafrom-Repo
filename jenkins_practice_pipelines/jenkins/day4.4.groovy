@@ -16,7 +16,9 @@ pipeline {
             }
         }
         stage('Dockerhub login') {
-            
+            steps {
+                
+            }
         }
     }
 }
