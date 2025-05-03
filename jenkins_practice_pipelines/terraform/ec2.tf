@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "my-ec2" {
     ami = "value"
     instance_type = "t2.medium"
-    
+    key_name = "vikas"
 
     
 }
