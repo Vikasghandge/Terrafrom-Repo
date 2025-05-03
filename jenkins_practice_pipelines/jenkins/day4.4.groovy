@@ -5,6 +5,6 @@ pipeline {
     IMAGE_NAME = ghandgevikas/nginx
     TAG = latest
     stages {
-        stage ('')
+        stage ('Chekout ')
     }
 }
