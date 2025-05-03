@@ -3,6 +3,8 @@
 pipeline {
     agent any 
     stages {
-        stage('Chekout code')
+        stage('Chekout code from scm') {
+            steps
+        }
     }
 }
