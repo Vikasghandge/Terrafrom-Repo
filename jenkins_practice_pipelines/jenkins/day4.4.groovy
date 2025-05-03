@@ -3,5 +3,6 @@
 pipeline {
     agent any 
     IMAGE_NAME = ghandgevikas/nginx
-    TAG = la
+    TAG = latest
+    
 }
