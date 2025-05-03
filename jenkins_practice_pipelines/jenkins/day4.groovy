@@ -3,6 +3,6 @@
 pipeline {
     agent any 
     stages {
-        stage('Che')
+        stage('Chekout code')
     }
 }
