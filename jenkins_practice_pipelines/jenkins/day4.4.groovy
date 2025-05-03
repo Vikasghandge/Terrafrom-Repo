@@ -5,6 +5,8 @@ pipeline {
     IMAGE_NAME = ghandgevikas/nginx
     TAG = latest
     stages {
-        stage ('Chekout code from git repo')
+        stage ('Chekout') {
+            steps 
+        }
     }
 }
