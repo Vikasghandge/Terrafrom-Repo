@@ -1,8 +1,8 @@
 SOURCE_DIR= "/home/ubuntu"  #this is source dir will copy from this dir
 DEST_DIR= "/tmp/backup_dir" #this is dest dir backup will be create here
-DAYS_TO_KEEP=30  #duration o
-DATE =$(date +"%y-%m-%d-%H-%M-%S")
-BACKUP_NAME= "$bakcup_$DATE.tar.gz"
+DAYS_TO_KEEP=30  #duration of old backup files
+DATE =$(date +"%y-%m-%d-%H-%M-%S") #date
+BACKUP_NAME= "$bakcup_$DATE.tar.gz" #name of our 
 
 mkidr -p $DEST_DIR
 
