@@ -12,7 +12,7 @@ pipeline {
         SCANNER_HOME = tool 'sonar-scanner'
         DOCKER_IMAGE = 'ghandgevikas/bms:latest'
         EKS_CLUSTER_NAME = 'kastro-eks'
-        AWS_REGION = 'us-east-1'
+        AWS_REGION = 'ap-south-1'
     }
 
     stages {
