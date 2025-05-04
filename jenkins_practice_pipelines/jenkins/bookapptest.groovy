@@ -44,7 +44,6 @@ pipeline {
         }
         stage('Docker Build & Push') {
             steps {
-                dir('Book-My-Show-main') {}
                 script {
                     withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                         sh ''' 
