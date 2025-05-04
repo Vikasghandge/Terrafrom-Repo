@@ -1,4 +1,4 @@
-(with K8S Stage)
+
 
 pipeline {
     agent any
