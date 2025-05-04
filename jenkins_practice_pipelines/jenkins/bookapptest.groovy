@@ -11,8 +11,8 @@ pipeline {
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
         DOCKER_IMAGE = 'ghandgevikas/bms:latest'
-        EKS_CLUSTER_NAME = 'my-eks'
-        AWS_REGION = 'ap-south-1'
+        EKS_CLUSTER_NAME = 'kastro-eks'
+        AWS_REGION = 'ap-south'
     }
 
     stages {
@@ -24,7 +24,7 @@ pipeline {
 
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/Vikasghandge/Docker.git'
+                git branch: 'main', url: 'https://github.com/KastroVKiran/Book-My-Show.git'
                 sh 'ls -la'  // Verify files after checkout
             }
         }
@@ -127,7 +127,7 @@ pipeline {
                 body: "Project: ${env.JOB_NAME}<br/>" +
                       "Build Number: ${env.BUILD_NUMBER}<br/>" +
                       "URL: ${env.BUILD_URL}<br/>",
-                to: 'ghandgevikas804@gmail.com',
+                to: 'kastrokiran@gmail.com',
                 attachmentsPattern: 'trivyfs.txt'
         }
     }
