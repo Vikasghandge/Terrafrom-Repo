@@ -72,7 +72,7 @@ pipeline {
                         docker build --no-cache -t ghandgevikas/bms:latest -f bookmyshow-app/Dockerfile bookmyshow-app
 
                         echo "Pushing Docker image to registry..."
-                        docker push kastrov/bms:latest
+                        docker push ghandgevikas/bms:latest
                         '''
                     }
                 }
