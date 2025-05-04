@@ -44,7 +44,7 @@ pipeline {
         }
         stage('Docker Build & Push') {
             steps {
-                dir
+                dir('')
                 script {
                     withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                         sh ''' 
