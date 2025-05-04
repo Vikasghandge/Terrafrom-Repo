@@ -1,4 +1,4 @@
-# (without K8S Stage)
+
 pipeline {
     agent any
     tools {
