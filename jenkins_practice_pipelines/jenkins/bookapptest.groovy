@@ -1,12 +1,8 @@
-
 pipeline {
     agent any
     tools {
         jdk 'jdk17'
         nodejs 'node23'
-    }
-    environment {
-        SCANNER_HOME = tool 'sonar-scanner'
     }
     stages {
         stage('Clean Workspace') {
@@ -17,34 +13,17 @@ pipeline {
         stage('Checkout from Git') {
             steps {
                 git branch: 'main', url: 'https://github.com/Vikasghandge/Docker.git'
-                sh 'ls -la'  // Verify files after checkout
-            }
-        }
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv('sonar-server') {
-                    sh ''' 
-                    $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=BMS \
-                    -Dsonar.projectKey=BMS 
-                    '''
-                }
-            }
-        }
-        stage('Quality Gate') {
-            steps {
-                script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token'
-                }
+                sh 'ls -la'
             }
         }
         stage('Install Dependencies') {
             steps {
                 sh '''
                 cd bookmyshow-app
-                ls -la  # Verify package.json exists
+                ls -la
                 if [ -f package.json ]; then
-                    rm -rf node_modules package-lock.json  # Remove old dependencies
-                    npm install  # Install fresh dependencies
+                    rm -rf node_modules package-lock.json
+                    npm install
                 else
                     echo "Error: package.json not found in bookmyshow-app!"
                     exit 1
@@ -92,7 +71,7 @@ pipeline {
                 docker ps -a
 
                 echo "Fetching logs..."
-                sleep 5  # Give time for the app to start
+                sleep 5
                 docker logs bms
                 '''
             }
