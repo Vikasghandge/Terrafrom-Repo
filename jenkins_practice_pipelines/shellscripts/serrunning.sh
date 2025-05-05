@@ -1,2 +1,2 @@
 SERVICE="nginx"
-if syatemct
+if syatemctl 
