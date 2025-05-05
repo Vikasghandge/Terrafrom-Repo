@@ -1,1 +1,1 @@
-# shell script for to take automated backup of my file for 30 days and 
+# shell script for to take automated backup of my file for 30 days and older than 30d
