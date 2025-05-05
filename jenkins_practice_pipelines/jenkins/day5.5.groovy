@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Push into DockerHub') {
             steps {
-                sh ''
+                sh 'docker push '
             }
         }
     }
