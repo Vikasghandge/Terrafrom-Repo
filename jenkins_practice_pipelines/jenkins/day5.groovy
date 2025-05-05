@@ -1,3 +1,3 @@
 pipeline {
-    
+    agent any
 }
