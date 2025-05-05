@@ -1,4 +1,5 @@
 pipeline {
     agent any 
-    IMAGE_NAME = ghandevikas
+    IMAGE_NAME = ghandevikas/nginx
+    TAG
 }
