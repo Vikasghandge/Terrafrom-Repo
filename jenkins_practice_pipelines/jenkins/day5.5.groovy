@@ -1,7 +1,7 @@
 pipeline {
     agent any 
 
-    environment {
+    environments {
     IMAGE_NAME = ghandevikas/nginx
     TAG = latest
     }
