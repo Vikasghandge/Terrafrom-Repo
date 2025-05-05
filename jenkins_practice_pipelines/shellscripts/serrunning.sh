@@ -2,4 +2,5 @@ SERVICE="nginx"
 if syatemctl is-active --quite $SERVICE: then
 echo "$SERVICE is running"
 else 
-     echo "$SERVICE 
+     echo "$SERVICE is not running"
+fi     
