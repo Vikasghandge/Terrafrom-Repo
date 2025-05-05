@@ -16,6 +16,8 @@ pipeline {
                 'testing locally'
             }
         }
-        stage()
+        stage('Deploy') {
+            
+        }
     }
 }
