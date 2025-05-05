@@ -1,0 +1,2 @@
+SERVICE="nginx"
+if syatemct
