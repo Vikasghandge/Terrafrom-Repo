@@ -4,6 +4,6 @@
 
 SOURCE_DIR= /home/ubuntu
 DEST_DIR= /tmp/backup_dir
-DATE=(date +"%d-%m-%d%-")
+DATE=(date +"%d-%m-%d%-%H-")
 DAYS_TO_KEEP=
 BACKUP_NAME=
