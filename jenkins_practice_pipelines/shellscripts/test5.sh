@@ -2,8 +2,8 @@
 
 #!/bin/bash
 
-SOURCE_DIR= 
-DEST_DIR=
+SOURCE_DIR= /home/ubuntu
+DEST_DIR= /
 DATE=
 DAYS_TO_KEEP=
 BACKUP_NAME=
