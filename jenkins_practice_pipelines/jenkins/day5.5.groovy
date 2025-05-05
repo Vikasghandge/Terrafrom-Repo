@@ -1,9 +1,10 @@
 pipeline {
     agent any 
 
-    environ
+    environment {
     IMAGE_NAME = ghandevikas/nginx
     TAG = latest
+    }
     
     stages{
         stage('Checkout') {
