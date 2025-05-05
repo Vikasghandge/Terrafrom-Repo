@@ -5,7 +5,9 @@ pipeline {
     
     stages{
         stage('Checkout') {
-            steps 
+            steps {
+                git url:
+            }
         }
     }
 }
