@@ -12,6 +12,8 @@ mkdir -p "$DEST_DIR"
 
 tar -cvf "$DEST_DIR/$BACKUP_NAME" -C "$SOURCE_DIR"
 
+find 
+
 
 
 
