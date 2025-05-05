@@ -14,6 +14,6 @@ pipeline {
                 docker build -t $IMAGE_NAME:$TAG .
             }
         }
-        stage('')
+        stage('Docker')
     }
 }
