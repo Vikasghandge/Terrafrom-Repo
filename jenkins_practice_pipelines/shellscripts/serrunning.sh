@@ -1,6 +1,8 @@
 SERVICE="nginx"
-if syatemctl is-active --quite $SERVICE: then
-echo "$SERVICE is running"
-else 
-     echo "$SERVICE is not running"
-fi     
+
+if systemctl is-active --quiet "$SERVICE"; then
+    echo "$SERVICE is running"
+else
+    echo "$SERVICE is not running"
+fi
+
