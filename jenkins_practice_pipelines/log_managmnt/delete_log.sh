@@ -8,3 +8,7 @@ find /path/of/your/logfile -type f -name "log.*" -mtime +7 -delete
 find /var/log -type f -name "log.*" -mtime +7 -delete 
 
 find /var/log -type f -name "log.*" -mtime +7 -delete
+
+
+
+find /pat
