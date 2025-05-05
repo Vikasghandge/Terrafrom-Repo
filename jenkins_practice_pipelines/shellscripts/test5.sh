@@ -8,3 +8,5 @@ DATE=(date +"%d-%m-%d%-%H-%M-%S")  #date
 DAYS_TO_KEEP= 30  # days to keep backups
 BACKUP_NAME= "backup_*$DEST_DIR.tar.gz  
 
+mkdir -p "$
+
