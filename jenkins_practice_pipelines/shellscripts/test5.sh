@@ -1,1 +1,1 @@
-# shell sc
+# shell script for to take automa
