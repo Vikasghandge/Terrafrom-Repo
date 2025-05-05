@@ -3,7 +3,7 @@
 #!/bin/bash
 
 SOURCE_DIR= /home/ubuntu
-DEST_DIR= /
+DEST_DIR= /tmp/bakcu
 DATE=
 DAYS_TO_KEEP=
 BACKUP_NAME=
