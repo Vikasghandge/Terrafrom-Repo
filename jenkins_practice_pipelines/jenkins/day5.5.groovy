@@ -1,6 +1,7 @@
 pipeline {
     agent any 
-    
+
+    environ
     IMAGE_NAME = ghandevikas/nginx
     TAG = latest
     
