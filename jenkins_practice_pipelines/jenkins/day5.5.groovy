@@ -1,4 +1,4 @@
 pipeline {
     agent any 
-    IMAGE_NAME=
+    IMAGE_NAME = ghandevikas
 }
