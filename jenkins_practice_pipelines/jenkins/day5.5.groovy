@@ -3,5 +3,7 @@ pipeline {
     IMAGE_NAME = ghandevikas/nginx
     TAG = latest
     
-    stages
+    stages{
+        stage('Check')
+    }
 }
