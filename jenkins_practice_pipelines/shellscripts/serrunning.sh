@@ -1,2 +1,2 @@
 SERVICE="nginx"
-if syatemctl is-active --quite
+if syatemctl is-active --quite $SERVIE
