@@ -2,4 +2,7 @@
 
 #!/bin/bash
 
-SOURCE_DIR
+SOURCE_DIR=
+DEST_DIR=
+DATE=
+DAYS
