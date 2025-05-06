@@ -11,4 +11,5 @@ fi
 SERVICE="nginx"
 
 if systemctl is-active --quite "$SERVICE"; then 
-    echo "$"
+    echo "$SERVICE is running"
+    
