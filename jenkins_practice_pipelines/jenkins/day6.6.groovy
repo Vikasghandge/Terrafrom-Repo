@@ -22,6 +22,6 @@ pipeline {
                 }
             }
         }
-        stage('')
+        stage('Docker ')
     }
 }
