@@ -7,7 +7,9 @@ pipeline {
             }
         }
         stage('Build') {
-            
+            stpes{
+                sh ''
+            }
         }
     }
 }
