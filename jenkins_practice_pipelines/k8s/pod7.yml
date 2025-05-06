@@ -6,4 +6,5 @@ metadata:
 spec: 
  containers: 
  - name: nginx
-   image: nginx:lastest   
+   image: nginx:latest
+   Ports:   
