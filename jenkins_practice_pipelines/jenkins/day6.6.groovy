@@ -22,6 +22,10 @@ pipeline {
                 }
             }
         }
-        stage('Docker Push Image Into Registery')
+        stage('Docker Push Image Into Registery') {
+            steps {
+                
+            }
+        }
     }
 }
