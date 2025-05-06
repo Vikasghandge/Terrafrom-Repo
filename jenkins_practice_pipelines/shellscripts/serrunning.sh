@@ -10,4 +10,5 @@ fi
 
 SERVICE="nginx"
 
-if systemctl is-active --quite "$SERVICE"; then
+if systemctl is-active --quite "$SERVICE"; then 
+    
