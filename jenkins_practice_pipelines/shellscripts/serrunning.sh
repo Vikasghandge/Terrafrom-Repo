@@ -20,4 +20,4 @@ fi
 
 SERVICE="nginx"
 
-if 
+if systemctl is-active 
