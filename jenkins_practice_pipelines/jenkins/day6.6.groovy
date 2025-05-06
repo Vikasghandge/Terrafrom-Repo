@@ -1,6 +1,6 @@
 pipeline {
     agent any 
     environment {
-        IM
+        IMAGE_NAME = 
     }
 }
