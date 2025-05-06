@@ -22,3 +22,5 @@ SERVICE="nginx"
 
 if systemctl is-active --quite "$SERIVICE" then;
     echo "$SERVICE is running"
+else 
+    echo    
