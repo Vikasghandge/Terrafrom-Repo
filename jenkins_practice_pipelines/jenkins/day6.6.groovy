@@ -15,6 +15,6 @@ pipeline {
                 sh 'docker build -t $IMAGE_NAME:TAG .'
             }
         }
-        stage('Docker L')
+        stage('Docker Login Hub')
     }
 }
