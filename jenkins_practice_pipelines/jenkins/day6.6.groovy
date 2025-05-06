@@ -5,6 +5,10 @@ pipeline {
         TAG = latest
     }
     stages{
-        stage('Checkout Code') 
+        stage('Checkout Code') {
+            steps {
+                
+            }
+        }
     }
 }
