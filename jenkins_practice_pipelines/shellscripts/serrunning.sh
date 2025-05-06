@@ -20,4 +20,5 @@ fi
 
 SERVICE="nginx"
 
-if systemctl is-active --quite "$SERIVICE" T
+if systemctl is-active --quite "$SERIVICE" then;
+    echo "$"
