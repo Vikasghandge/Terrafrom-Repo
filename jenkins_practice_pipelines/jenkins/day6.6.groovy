@@ -15,6 +15,10 @@ pipeline {
                 sh 'docker build -t $IMAGE_NAME:TAG .'
             }
         }
-        stage('Docker Login Hub')
+        stage('Docker Login Hub') {
+            steps {
+                with
+            }
+        }
     }
 }
