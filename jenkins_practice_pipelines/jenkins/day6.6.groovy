@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Docker Push Image Into Registery') {
             steps {
-                docker push $
+                docker push "$IMAGE_NAME":$TAG
             }
         }
     }
