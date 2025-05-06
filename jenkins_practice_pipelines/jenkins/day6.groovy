@@ -7,10 +7,14 @@ pipeline {
             }
         }
         stage('Build') {
-            stpes{
+            stpes {
                 sh 'mvn install clean'
             }
         }
-        stage('Test')
+        stage('Test') {
+            steps{
+
+            }
+        }
     }
 }
