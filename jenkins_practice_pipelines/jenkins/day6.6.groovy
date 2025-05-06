@@ -22,6 +22,6 @@ pipeline {
                 }
             }
         }
-        stage('Docker ')
+        stage('Docker Push Image Into ')
     }
 }
