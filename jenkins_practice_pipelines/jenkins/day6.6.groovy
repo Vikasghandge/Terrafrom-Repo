@@ -10,6 +10,10 @@ pipeline {
                 git url: 'https://github.com/your-user/your-repo.git', 'branch: main'
             }
         }
-        stage('Docker Build Image') 
+        stage('Docker Build Image') {
+            steps {
+                sh
+            }
+        }
     }
 }
