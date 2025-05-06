@@ -13,8 +13,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo ""
+                echo "testing locally"
             }
         }
+        
     }
 }
