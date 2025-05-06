@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "Deplo"
+                sh "Deploying in local environment"
             }
         }
     }
