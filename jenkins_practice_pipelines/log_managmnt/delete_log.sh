@@ -16,4 +16,4 @@ find /var/log/ -type f -name "log.*" -mtime +7 -delete
 
 find /var/log -type f -name "log.*" -mtime +7 -delete
 
-0 0 * * * /home/ubuntu/delete
+0 0 * * * /home/ubuntu/delete_log.sh 
