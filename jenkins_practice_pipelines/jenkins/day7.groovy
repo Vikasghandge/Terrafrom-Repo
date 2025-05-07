@@ -2,7 +2,7 @@ pipeline {
     agent any {
         stages {
             stage('Checkout Code') {
-                branch: main
+                'branch: main' url:
             }
         }
     }
