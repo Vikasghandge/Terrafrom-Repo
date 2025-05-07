@@ -18,4 +18,4 @@ find /var/log -type f -name "log.*" -mtime +7 -delete
 
 # crontab  0 0 * * * /home/ubuntu/delete_log.sh 
 
-find /path/of/file -type f -name
+find /path/of/file -type f -name "log.*"
