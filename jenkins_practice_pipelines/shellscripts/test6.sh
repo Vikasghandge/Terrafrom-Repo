@@ -6,4 +6,4 @@ BACKUP_NAME="backup_*.tar.gz"
 
 mkdir -p $DEST_DIR
 
-tar -czf "$DEST"
+tar -czf "$DEST_DIR/$"
