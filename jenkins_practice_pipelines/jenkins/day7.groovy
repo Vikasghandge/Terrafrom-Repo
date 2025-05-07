@@ -26,4 +26,4 @@ pipeline {
 }
 
 
-mvn lifecycle --> checkout, 
+mvn lifecycle --> checkout - c
