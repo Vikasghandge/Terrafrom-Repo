@@ -14,7 +14,11 @@
                     'branch: main', url: 'htttp://github.com/vikasghandge/git'
                 }
             }
-            stage('')
+            stage('Docker Image Build') {
+                steps {
+                    sh 'd'
+                }
+            }
         }
     }
  }
