@@ -21,7 +21,7 @@
             }
             stage('Docker Push') {
                 steps {
-                    withCredentials([])
+                    withCredentials([username])
                 }
             }
         }
