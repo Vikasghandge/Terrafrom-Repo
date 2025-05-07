@@ -28,7 +28,7 @@
             }
             stage('Docker Image Push registery') {
                 steps {
-                    sh 'docker push ''
+                    sh 'docker push '$IMAGE_NAME'
                 }
             }
         }
