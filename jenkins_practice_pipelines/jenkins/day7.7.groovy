@@ -22,7 +22,7 @@
             stage('Docker Push') {
                 steps {
                     withCredentials([usernamePassword(CredentialsId, 'DOCKERHUB_CREDENTILAS', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                        sh 'echo ''
+                        sh 'echo '$DOCKER_PASS | '
                     }
                 }
             }
