@@ -19,7 +19,11 @@
                     sh 'docker build -t $IMAGE_NAME:TAG .'
                 }
             }
-            stage('Docker Push')
+            stage('Docker Push') {
+                steps {
+                    with
+                }
+            }
         }
     }
  }
