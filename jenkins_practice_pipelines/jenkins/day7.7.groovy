@@ -7,5 +7,7 @@
         IMAGE_NAME = ghandgevikas/nginx
         TAG = latest
         
+
+        stages
     }
  }
