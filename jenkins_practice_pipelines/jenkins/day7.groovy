@@ -2,7 +2,9 @@ pipeline {
     agent any {
         stages {
             stage('Checkout Code') {
-                'branch: main', url: 'htttp://github.com'
+                steps {
+                    'branch: main', url: 'htttp://github.com/vikasghandge/git'
+                }
             }
         }
     }
