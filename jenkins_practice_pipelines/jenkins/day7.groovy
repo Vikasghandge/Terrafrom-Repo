@@ -26,4 +26,4 @@ pipeline {
 }
 
 
-mvn lifecycle --> checkout - compile - build - test - package - deploy - install
+mvn lifecycle --> checkout - compile - build - test - package - deploy - install.
