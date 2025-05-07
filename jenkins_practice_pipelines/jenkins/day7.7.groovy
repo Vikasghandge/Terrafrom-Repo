@@ -16,7 +16,7 @@
             }
             stage('Docker Image Build') {
                 steps {
-                    sh 'd'
+                    sh 'docker image build'
                 }
             }
         }
