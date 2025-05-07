@@ -8,4 +8,4 @@ mkdir -p $DEST_DIR
 
 tar -czf "$DEST_DIR/$BACKUP_NAME", -C "$SOURCE_DIR"
 
-find $DEST_DIR -type -f -name "backup_*.tar.gz" -mtime 
+find $DEST_DIR -type -f -name "backup_*.tar.gz" -mtime DAYS-
