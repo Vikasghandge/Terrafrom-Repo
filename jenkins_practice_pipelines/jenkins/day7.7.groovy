@@ -9,7 +9,9 @@
         
 
         stages {
-            stage('')
+            stage('Chekout code') {
+                
+            }
         }
     }
  }
