@@ -1,2 +1,2 @@
 
-# this is pipeline will checkout code 
+# this is pipeline will checkout code then 
