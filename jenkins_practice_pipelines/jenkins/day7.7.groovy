@@ -28,7 +28,7 @@
             }
             stage('Docker Image Push registery') {
                 steps {
-                    sh ''
+                    sh 'docker push ''
                 }
             }
         }
