@@ -11,7 +11,7 @@
         stages {
             stage('Chekout code') {
                 steps {
-                    'branch: main, url:' branch: main', url: 'htttp://github.com/vikasghandge/git'
+                    'branch: main', url: 'htttp://github.com/vikasghandge/git'
                 }
             }
         }
