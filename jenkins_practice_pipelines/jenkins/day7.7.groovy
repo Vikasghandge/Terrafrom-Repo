@@ -11,7 +11,7 @@
         stages {
             stage('Chekout code') {
                 steps {
-                    'branch: n'
+                    'branch: main url:'
                 }
             }
         }
