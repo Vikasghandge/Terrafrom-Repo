@@ -16,7 +16,7 @@
             }
             stage('Docker Image Build') {
                 steps {
-                    sh 'docker build -t $iIMAGE_NAME:TAG'
+                    sh 'docker build -t $iIMAGE_NAME:TAG .'
                 }
             }
         }
