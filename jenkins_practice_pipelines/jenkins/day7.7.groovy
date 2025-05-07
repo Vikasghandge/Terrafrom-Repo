@@ -10,7 +10,9 @@
 
         stages {
             stage('Chekout code') {
-                
+                steps {
+                    
+                }
             }
         }
     }
