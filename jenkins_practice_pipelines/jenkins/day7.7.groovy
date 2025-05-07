@@ -26,7 +26,9 @@
                     }
                 }
             }
-            stage()
+            stage('Docker Image Push registery') {
+                
+            }
         }
     }
  }
