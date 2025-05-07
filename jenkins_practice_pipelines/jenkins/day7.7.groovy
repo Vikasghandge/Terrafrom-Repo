@@ -5,6 +5,7 @@
     agent any 
     environment {
         IMAGE_NAME = ghandgevikas/nginx
-        TAG = 
+        TAG = latest
+        
     }
  }
