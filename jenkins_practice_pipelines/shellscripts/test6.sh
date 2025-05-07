@@ -7,3 +7,5 @@ BACKUP_NAME="backup_*.tar.gz"
 mkdir -p $DEST_DIR
 
 tar -czf "$DEST_DIR/$BACKUP_NAME", -C "$SOURCE_DIR"
+
+find $DEST_DIR -type -f 
