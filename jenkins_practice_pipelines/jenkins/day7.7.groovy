@@ -21,7 +21,7 @@
             }
             stage('Docker Push') {
                 steps {
-                    withCredentials([usernamePassword(CredentialsId, 'DOCKER')])
+                    withCredentials([usernamePassword(CredentialsId, 'DOCKERHUB_CRE')])
                 }
             }
         }
