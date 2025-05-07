@@ -4,4 +4,6 @@ DAYS_TO_KEEP= 30
 DATE=(date "+%y-%m-%d-%H-%M-%S")
 BACKUP_NAME="backup_*.tar.gz"
 
-mkdir -p $
+mkdir -p $DEST_DIR
+
+tar -
