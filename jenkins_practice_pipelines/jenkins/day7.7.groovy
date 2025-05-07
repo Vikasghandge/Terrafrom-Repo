@@ -8,6 +8,8 @@
         TAG = latest
         
 
-        stages
+        stages {
+            stage('')
+        }
     }
  }
