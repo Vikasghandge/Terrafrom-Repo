@@ -22,9 +22,4 @@ find /path/of/file -type f -name "log.*" -mtime +7 -delete
 
 # crontab 0 0 * * * /home/ubuntu/test.sh 
 
-SERVICE='nginx'
- if systemctl is-active --quite '$SERVICE' then;
- echo '$SERVICE is running' 
- else  
-    echo '$SERVICE is not running'
-fi 
+ 
