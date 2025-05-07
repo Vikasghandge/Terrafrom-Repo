@@ -3,5 +3,7 @@
  
  pipeline {
     agent any 
-    en
+    environment {
+        IMAGE
+    }
  }
