@@ -24,4 +24,6 @@ find /path/of/file -type f -name "log.*" -mtime +7 -delete
 
 SERVICE='nginx'
  if systemctl is-active --quite '$SERVICE' then;
- echo $SERVICE i
+ echo $SERVICE is running 
+ else  
+    
