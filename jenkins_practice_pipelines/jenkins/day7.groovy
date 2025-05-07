@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                
+                echo 'deploying in local environment'
             }
         }
     }
