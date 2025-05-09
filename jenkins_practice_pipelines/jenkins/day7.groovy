@@ -19,7 +19,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                dir('chatbot-ui-legacy/Eks-terraform') {
+                dir('chatbot-ui-legacy') {
                     sh 'npm install'  // Install Node.js dependencies inside the specified directory
                 }
             }
