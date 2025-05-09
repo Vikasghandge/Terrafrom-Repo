@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
     bucket = "demo1122233bucket"
-    key = "value"
+    key = "terraform/state.tf"
   }
 }
