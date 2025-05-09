@@ -12,7 +12,7 @@ variable "ami_id" {
 variable "instance_type" {
   description = "Instance type"
   type        = string
-  default     = "t2.medium"
+  default     = "t2.small"
 }
 
 variable "subnet_id" {
