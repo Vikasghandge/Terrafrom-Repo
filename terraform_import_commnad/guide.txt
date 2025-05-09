@@ -7,4 +7,4 @@ example 1) suppose i have instance which i have created manually we need instanc
 instance name: (Terraform_test)
 instance_id: (i-02df43740dcc77fb9)
 
-create simple .ft file 
+create simple .tf file 
