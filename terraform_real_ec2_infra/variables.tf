@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region to deploy the instance"
   type        = string
-  default     = "ap-south-1"
+  default     = "us"
 }
 
 variable "ami_id" {
