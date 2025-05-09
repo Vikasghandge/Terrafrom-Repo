@@ -3,5 +3,5 @@
 terraform infrastructure.
 
 
-example 1) suppose i have instance which i have created manually 
+example 1) suppose i have instance which i have created manually we need ina
 instance name: 
