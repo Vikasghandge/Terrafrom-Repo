@@ -35,4 +35,4 @@ resources "aws_s3_bucket" "example_bucket" {
     bucket = "myterraformvikasbuccket"    # your original present bucket name.
 }
 
-terraform import 
+terraform import aws_s3_bucket 
