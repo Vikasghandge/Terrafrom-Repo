@@ -27,4 +27,4 @@ and then apply this will create terraform tfstatefile.
 
 
 
-2 example
+## example of how to import s3 buccket.
