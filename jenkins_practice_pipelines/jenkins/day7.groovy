@@ -66,7 +66,6 @@ pipeline pipeline {
         stage('Docker Build & Push') {
             steps {
                 script {
-                    dir('chatbot-ui-legacy/Eks-terraform') {
                         // Build the Docker image, tag it, and push it to Docker Hub
                         withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                             sh 'docker build -t chatbot .'
