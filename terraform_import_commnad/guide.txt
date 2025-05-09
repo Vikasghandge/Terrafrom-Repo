@@ -29,3 +29,5 @@ and then apply this will create terraform tfstatefile.
 
 ## example 2 of how to import s3 bucket.
 requirement: bucket name --> myterraformvikasbuccket
+
+create simple s3.tf file
