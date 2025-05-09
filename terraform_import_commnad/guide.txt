@@ -3,4 +3,4 @@
 terraform infrastructure.
 
 
-example 1) suppose i have instance which i have created manual
+example 1) suppose i have instance which i have created manually 
