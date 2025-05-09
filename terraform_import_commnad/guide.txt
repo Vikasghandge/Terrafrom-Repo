@@ -8,4 +8,4 @@ instance name: (Terraform_test)
 instance_id: (i-02df43740dcc77fb9)
 
 create simple .tf file 
-example ec2.tf
+example ec2.tf   # inside 
