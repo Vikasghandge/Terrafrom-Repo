@@ -33,5 +33,5 @@ resource "aws_dynamodb_table" "terraform_lock" {
     }
 }
  --------------------------------------------------------------------------------
- create ano
+ create another file. backend.tf
 
