@@ -74,7 +74,6 @@ pipeline pipeline {
                             sh 'docker push ghandgevikas/chatbot:latest'
                         }
                     }
-                }
             }
         }
 
