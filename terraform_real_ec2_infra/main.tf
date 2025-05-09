@@ -16,7 +16,7 @@ resource "aws_instance" "Terraform_test" {
   }
 
   root_block_device {
-    volume_size = 80
+    volume_size = 8
     volume_type = "gp3"
   }
 
