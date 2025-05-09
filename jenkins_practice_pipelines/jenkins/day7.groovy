@@ -1,4 +1,4 @@
-pipeline pipeline {
+pipeline {
     agent any
 
     tools {
@@ -44,22 +44,20 @@ pipeline pipeline {
             }
         }
 
-        stage('OWASP FS SCAN') {
+        stage('OWASP FS Scan') {
             steps {
-                dir('chatbot-ui-legacy/Eks-terraform') {
-                    // Run OWASP Dependency Check
+                // Run OWASP Dependency Check in the 'chatbot-ui-legacy' directory
+                dir('chatbot-ui-legacy') {
                     dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit', odcInstallation: 'DP-Check'
-                    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'  // Publish the report
+                    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
                 }
             }
         }
 
-        stage('TRIVY FS SCAN') {
+        stage('TRIVY FS Scan') {
             steps {
-                dir('chatbot-ui-legacy/Eks-terraform') {
-                    // Run Trivy on the file system and save the result in a JSON file
-                    sh 'trivy fs . > trivyfs.json'
-                }
+                // Run Trivy on the file system and save the result in a JSON file
+                sh 'trivy fs chatbot-ui-legacy > trivyfs.json'
             }
         }
 
@@ -74,6 +72,7 @@ pipeline pipeline {
                             sh 'docker push ghandgevikas/chatbot:latest'
                         }
                     }
+                }
             }
         }
 
