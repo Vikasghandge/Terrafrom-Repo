@@ -4,12 +4,12 @@ provider "aws" {
 
 resource "aws_instance" "my-instance11" {
     ami = "ami-0e35ddab05955cf57"
-    instance_type = "t2."
+    instance_type = "t2.micro"
     key_name = "vikas-key"
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-   bucket = "demo1122233buckettt3"
+   bucket = "demo1122233buckettt345"
 
 }
 
