@@ -13,8 +13,8 @@ resource "aws_instance" "my-instance11" {
 
 # }
 
-resource "aws_dynamodb_table" "terraform_lock" {
-    name = "terraform-lock"
+resource "aws_dynamodb_table" "terraform_lock1" {
+    name = "terraform-lock1"
     billing_mode = "PAY_PER_REQUEST"
     hash_key = "LockID"
     
