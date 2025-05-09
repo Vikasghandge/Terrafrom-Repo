@@ -8,10 +8,10 @@ resource "aws_instance" "my-instance" {
     key_name = "vikas-key"
 }
 
-resource "aws_s3_bucket" "my_bucket" {
-    bucket = "demo1122233buckettt3"
+#resource "aws_s3_bucket" "my_bucket" {
+ #   bucket = "demo1122233buckettt3"
 
-}
+#}
 
 resource "aws_dynamodb_table" "terraform_lock" {
     name = "terraform-lock"
