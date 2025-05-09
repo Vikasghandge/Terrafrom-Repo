@@ -1,4 +1,4 @@
-// this file jenkins for deploy chat
+// this file jenkins for deploy chat.gtp 
 pipeline {
     agent any
 
