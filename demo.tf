@@ -7,5 +7,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "my_ec2" {
-    ami = "value"
+    ami = "ami-0e35ddab05955cf57"
+    
 }
