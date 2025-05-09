@@ -8,7 +8,7 @@ resource "aws_instance" "my-instance11" {
     key_name = "vikas-key"
 }
 
-resource "aws_s3_bucket" "my_bucket" {
+resource "aws_s3_bucket" "my_buckett" {
    bucket = "demo1122233buckettt345"
 
 }
