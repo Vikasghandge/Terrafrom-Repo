@@ -150,7 +150,7 @@ pipeline{
                 withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                     sh "docker build -t chatbot ."
                     sh "docker tag chatbot ghandgevikas/chatbot:latest"
-                    sh "docker push sevenajay/chatbot:latest"
+                    sh "docker push ghandgevikas/chatbot:latest"
                 }
             }
         }
