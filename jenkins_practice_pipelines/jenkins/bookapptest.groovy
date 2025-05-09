@@ -159,7 +159,7 @@ pipeline {
 
         stage("TRIVY"){
             steps{
-                sh "trivy image sevenajay/chatbot:latest &gt; trivy.json"
+                sh "trivy image ghandgevikas/chatbot:latest &gt; trivy.json"
             }
         }
         stage ("Remove container") {
