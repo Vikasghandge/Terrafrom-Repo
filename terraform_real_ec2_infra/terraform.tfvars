@@ -3,4 +3,4 @@ subnet_id          = "subnet-0c0645d5bb4363e74"
 security_group_id  = "sg-08cabcfd4b939f93f"
 instance_count     = 2
 name_prefix        = "MyServer"
-key_name = "value"
+key_name = "vikas-key"
