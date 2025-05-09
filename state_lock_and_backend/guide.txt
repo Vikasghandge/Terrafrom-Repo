@@ -41,8 +41,8 @@ resource "aws_dynamodb_table" "terraform_lock" {
   backend "s3" {
     bucket = "demo1122233buckettt3"   # your existing bucket name
     key = "vikas/state.tfstate"       # path dorectory
-    region = "ap-south-1"              
-    dynamodb_table = "terraform-lock"
+    region = "ap-south-1"             # region 
+    dynamodb_table = "terraform-lock" # 
     encrypt = true
   }
 }
