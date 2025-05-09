@@ -1,4 +1,4 @@
-# what 
+# what basically 
 # in this file i have explained all the steps to how to import existing manually created resource in 
 terraform infrastructure.
 
