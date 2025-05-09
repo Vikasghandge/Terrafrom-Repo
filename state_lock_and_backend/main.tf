@@ -9,6 +9,6 @@ resource "aws_instance" "my-instance" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-    name
+    bucket = "value"
     
 }
