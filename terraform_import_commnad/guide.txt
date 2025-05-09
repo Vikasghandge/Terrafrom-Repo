@@ -22,4 +22,4 @@ resources "aws_instance" "Terraform_test" {
 # syntax of command  = terraform import aws_instance.<instance_name> <instance_id>
 terraform import aws_instance.Terraform_test i-02df43740dcc77fb9
 
-then run command: terraform show this will show infrastructure
+then run command: terraform show this will show infrastructure copy it into your t
