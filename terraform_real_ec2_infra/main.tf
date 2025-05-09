@@ -2,7 +2,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-resource "aws_instance" "Terraform_test" {
+resource "aws_instance" "myapp_updated_instance" {
   count                        = var.instance_count
   ami                          = var.ami_id
   instance_type                = var.instance_type
