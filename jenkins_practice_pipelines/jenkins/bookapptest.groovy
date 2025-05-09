@@ -143,17 +143,20 @@ pipeline{
                 sh "trivy fs . &gt; trivyfs.json"
             }
         }
-        stage("Docker Build &amp; Push"){
-            steps{
-                script{
-                   withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
-                       sh "docker build -t chatbot ."
-                       sh "docker tag chatbot sevenajay/chatbot:latest "
-                       sh "docker push sevenajay/chatbot:latest "
-                    }
+        stage("Docker Build & Push") {
+    steps {
+        script {
+            dir('/Eks-terraform/chatbot-ui-legacy') {
+                withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                    sh "docker build -t chatbot ."
+                    sh "docker tag chatbot sevenajay/chatbot:latest"
+                    sh "docker push sevenajay/chatbot:latest"
                 }
             }
         }
+    }
+}
+
         stage("TRIVY"){
             steps{
                 sh "trivy image sevenajay/chatbot:latest &gt; trivy.json"
