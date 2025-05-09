@@ -149,7 +149,7 @@ pipeline{
             dir('chatbot-ui-legacy/Eks-terraform') {
                 withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                     sh "docker build -t chatbot ."
-                    sh "docker tag chatbot sevenajay/chatbot:latest"
+                    sh "docker tag chatbot ghandgevikas/chatbot:latest"
                     sh "docker push sevenajay/chatbot:latest"
                 }
             }
