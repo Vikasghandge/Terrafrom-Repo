@@ -23,4 +23,4 @@ resources "aws_instance" "Terraform_test" {
 terraform import aws_instance.Terraform_test i-02df43740dcc77fb9
 
 then run command: terraform show this will show infrastructure copy it into your ec2.tf file.
-and then apply this will create terraform tf
+and then apply this will create terraform tfstatefile.
