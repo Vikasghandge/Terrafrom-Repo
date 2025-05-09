@@ -5,4 +5,4 @@
 # step by step guild how to create configure s3 for tfstatefile and statelocaking.
 
 requirement = you need one s3 bucket already created or already exist.
-cop
+copy bucket name: <bucket name>
