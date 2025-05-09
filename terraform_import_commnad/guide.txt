@@ -31,4 +31,4 @@ and then apply this will create terraform tfstatefile.
 requirement: bucket name --> myterraformvikasbuccket
 
 # create simple s3.tf file
-resources "aws_s3_bucket" ""
+resources "aws_s3_bucket" "example"
