@@ -5,7 +5,7 @@ provider "aws" {
 
 provider "aws" {
     region = "us-east-1"
-    ali
+    alias = "virginia"
 }
 
 resource "aws_instance" "my_ec2" {
