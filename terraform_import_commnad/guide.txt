@@ -36,3 +36,4 @@ resources "aws_s3_bucket" "example_bucket" {
 }
 
 terraform import aws_s3_bucket.examplebucket myterraformvikasbuccket
+
