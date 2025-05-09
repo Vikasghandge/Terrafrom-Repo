@@ -146,7 +146,7 @@ pipeline{
         stage("Docker Build & Push") {
     steps {
         script {
-            dir('/chatbot-ui-legacy/Eks-terraform') {
+            dir('chatbot-ui-legacy/Eks-terraform') {
                 withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                     sh "docker build -t chatbot ."
                     sh "docker tag chatbot sevenajay/chatbot:latest"
