@@ -13,5 +13,7 @@ resource "aws_s3_bucket" "my_bucket" {
 
 }
 
-resource "aws" "name" {
+resource "aws_dynamodb_table" "name" {
+    name = "value"
+    
 }
