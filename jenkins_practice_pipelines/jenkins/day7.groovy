@@ -49,7 +49,7 @@ pipeline {
                 // Run OWASP Dependency Check in the 'chatbot-ui-legacy' directory
              //   dir('chatbot-ui-legacy') {
                //     dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit', odcInstallation: 'DP-Check'
-                    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+                 //   dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
                 }
             }
         }
