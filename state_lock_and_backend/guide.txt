@@ -10,7 +10,7 @@ copy bucket name: <bucket name>
 configuration steps:  
 create one file = main.tf add content
 
-///
+------------------------------------------------------------------------------
 provider "aws" {
     region = "ap-south-1"
 }
