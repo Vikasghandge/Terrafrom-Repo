@@ -32,5 +32,5 @@ requirement: bucket name --> myterraformvikasbuccket
 
 # create simple s3.tf file
 resources "aws_s3_bucket" "example_bucket" {
-    bucket = "myterraformvikasbuccket"    # your 
+    bucket = "myterraformvikasbuccket"    # your oribucket name.
 }
