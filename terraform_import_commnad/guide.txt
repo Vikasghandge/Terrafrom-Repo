@@ -19,4 +19,4 @@ resources "aws_instance" "Terraform_test" {
 }
 
 # now we need to run terraform import command 
-# syntax of command  = terraform import aws 
+# syntax of command  = terraform import aws_instance.<> 
