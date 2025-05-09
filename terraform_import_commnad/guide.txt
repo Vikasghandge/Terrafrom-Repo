@@ -12,3 +12,5 @@ example ec2.tf   # inside file add below content
 resources "aws_instance" "Terraform_test" {
     # leave it empty
 }
+
+# now we need to 
