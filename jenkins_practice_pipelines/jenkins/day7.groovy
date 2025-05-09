@@ -45,10 +45,10 @@ pipeline {
         }
 
         // stage('OWASP FS Scan') {
-            steps {
+           // steps {
                 // Run OWASP Dependency Check in the 'chatbot-ui-legacy' directory
-                dir('chatbot-ui-legacy') {
-                    dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit', odcInstallation: 'DP-Check'
+             //   dir('chatbot-ui-legacy') {
+               //     dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit', odcInstallation: 'DP-Check'
                     dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
                 }
             }
