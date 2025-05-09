@@ -1,4 +1,4 @@
-
+# what 
 # in this file i have explained all the steps to how to import existing manually created resource in 
 terraform infrastructure.
 
@@ -13,4 +13,4 @@ resources "aws_instance" "Terraform_test" {
     # leave it empty
 }
 
-# now we need to run terraform import 
+# now we need to run terraform import command 
