@@ -1,4 +1,5 @@
-# what basically terraform import 
+# what basically terraform import is ?
+--> 
 # in this file i have explained all the steps to how to import existing manually created resource in 
 terraform infrastructure.
 
