@@ -8,4 +8,5 @@ requirement = you need one s3 bucket already created or already exist.
 copy bucket name: <bucket name>
 
 configuration steps:  
+create one file = main.tf 
 
