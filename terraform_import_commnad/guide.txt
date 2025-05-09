@@ -4,4 +4,5 @@ terraform infrastructure.
 
 
 example 1) suppose i have instance which i have created manually we need instance name and instance id
-instance name: ()
+instance name: (Terraform_test)
+instance_id: ()
