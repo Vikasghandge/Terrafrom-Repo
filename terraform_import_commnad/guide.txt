@@ -1,5 +1,9 @@
 # what basically terraform import is ?
---> terraform import command will help to import 
+--> terraform import command will help to import and create existing resources in terraform 
+
+
+
+
 # in this file i have explained all the steps to how to import existing manually created resource in 
 terraform infrastructure.
 
