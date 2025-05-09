@@ -39,7 +39,7 @@ resource "aws_dynamodb_table" "terraform_lock" {
 -------------------------------------------
  terraform {
   backend "s3" {
-    bucket = "demo1122233buckettt3"
+    bucket = "demo1122233buckettt3"   # your existing buck
     key = "vikas/state.tfstate"
     region = "ap-south-1"
     dynamodb_table = "terraform-lock"
