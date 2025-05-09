@@ -13,7 +13,7 @@ resource "aws_s3_bucket" "my_bucket" {
 
 }
 
-resource "aws_dynamodb_table" "name" {
+resource "aws_dynamodb_table" "terraform_lock" {
     name = "value"
     
 }
