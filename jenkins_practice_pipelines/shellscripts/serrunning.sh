@@ -34,3 +34,4 @@ SERVICE='nginx'
  else  
     echo "$SERVICE is not running"
 fi
+
