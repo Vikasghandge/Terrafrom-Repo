@@ -30,4 +30,6 @@ pipeline {
 // compile - which will compile code into computer language.
 // build - which will build code
 // package - which will package all dependencies, liberies, and code
-// test - it will check va
+// test - it will check vaulnalbraties
+// deploy -  it will deploy on location.
+// install -
