@@ -1,2 +1,3 @@
-resource "aws_vpc" "Terraform_" {
+resource "aws_vpc" "Terraform_vpc" {
+    
 }
