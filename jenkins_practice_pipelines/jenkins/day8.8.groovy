@@ -20,7 +20,9 @@ pipeline {
             }
         }
         stage('Docker Login') {
-            
+            steps {
+                with
+            }
         }
     }
 }
