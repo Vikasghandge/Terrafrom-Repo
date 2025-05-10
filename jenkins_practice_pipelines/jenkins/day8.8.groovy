@@ -10,9 +10,10 @@ pipeline {
         stages {
             stage('Checkout Code') {
                 steps {
-                    'branch: main', url:'http://github.com/vikasghandge'
+                    'branch: main', url:'http://github.com/vikasghandge/terraform.git'
                 }
             }
         }
+        stage
     }
 }
