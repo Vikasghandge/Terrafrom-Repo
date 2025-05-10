@@ -3,6 +3,6 @@ resource "aws_vpc" "Terraform_vpc" {
 }
 
 resource "aws_subnet" "Terraform_pub_sub" {
-    vpc_id = "value"
+    vpc_id = "valuevpc-0ad71c754381424b0"
     
 }
