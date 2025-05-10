@@ -10,5 +10,5 @@ resource "aws_instance" "my-instance" {
     key_name = "vikas-key"
 }
 
-resource "" "name" {
+resource "aws_s" "name" {
 }
