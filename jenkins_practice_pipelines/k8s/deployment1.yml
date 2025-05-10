@@ -11,8 +11,8 @@ matchLabels:
  app: demo
 template:
   metadata: 
-  name: demo-app
-  labels:
+   labels:
      app: demo
+ spec: 
  
      
