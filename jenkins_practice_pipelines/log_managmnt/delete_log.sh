@@ -25,4 +25,4 @@ find /path/of/file -type f -name "log.*" -mtime +7 -delete
  find /var/log -type f -name "log.*" -mtime +7 -delete
 
  # find - will search file
- 
+ # type - file 
