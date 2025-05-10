@@ -38,4 +38,4 @@ fi
 
 
 
-SERVICE
+SERVICE="nginx"
