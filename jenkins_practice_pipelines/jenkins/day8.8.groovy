@@ -28,7 +28,7 @@ pipeline {
         }
         stage('DockerHub Push') {
             steps {
-                docker push '$IMAGE_NAME:'$TAG'
+                docker push '$IMAGE_NAME':'$TAG'
             }
         }
     }
