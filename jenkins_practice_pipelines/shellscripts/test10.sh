@@ -5,7 +5,9 @@ DATE=(date +"%y-%m-%d-%H-%M-%S") # date and time
 DAYS_TO_KEEP= 30 # days to keep your backup you want. 
 BACKUP_NAME="backup_*.tar.gz" #  backup name
 
-mkdir -p $DEST_DIR
+mkdir -p "$DEST_DIR"
 
 tar -cvf "$DEST_DIR/$BACKUP_NAME" -C "$SOURCE_DIR"
+
+
 
