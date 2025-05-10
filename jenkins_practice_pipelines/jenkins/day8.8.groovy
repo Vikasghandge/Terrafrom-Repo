@@ -14,6 +14,10 @@ pipeline {
                 }
             }
         }
-        stage('Docker Image Build')
+        stage('Docker Image Build') {
+            steps {
+                sh 'docker build '
+            }
+        }
     }
 }
