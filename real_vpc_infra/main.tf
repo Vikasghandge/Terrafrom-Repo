@@ -1,1 +1,2 @@
-res
+resource "aws_vpc" "name" {
+}
