@@ -39,3 +39,4 @@ fi
 
 
 SERVICE="nginx"
+if systemctl
