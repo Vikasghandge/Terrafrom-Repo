@@ -35,7 +35,9 @@ pipeline {
         }
         stage('Terraform Apply/Destroy') {
             steps {
-                dir('terraform')
+                dir('terraform') {
+                    sh ''
+                }
             }
         }
     }
