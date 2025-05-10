@@ -25,5 +25,5 @@ template:
 apiVersion: v1 
 kind: Service
 metadata: 
- name
+ name: 
      
