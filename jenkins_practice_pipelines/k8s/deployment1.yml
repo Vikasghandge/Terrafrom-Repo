@@ -29,5 +29,5 @@ metadata:
  labels: 
    app: demo
 spec: 
-    
+ type: Load   
      
