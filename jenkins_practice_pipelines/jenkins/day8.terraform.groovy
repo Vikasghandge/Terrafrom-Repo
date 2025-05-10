@@ -15,7 +15,7 @@ pipeline {
         stage('Terraform init') {
             steps {
                 dir('terraform') {
-                    sh 'terraform init'  // init backend and install 
+                    sh 'terraform init'  // init backend and install provider plugins
                 }
             }
         }
