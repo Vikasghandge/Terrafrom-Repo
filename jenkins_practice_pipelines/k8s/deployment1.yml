@@ -17,5 +17,6 @@ template:
   containers: 
   - name: demo-contaier
     image: ghandgevikas/demo:latest
-    Ports
+    Ports:
+    - containersPort: 
      
