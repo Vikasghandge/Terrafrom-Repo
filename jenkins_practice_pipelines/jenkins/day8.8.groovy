@@ -10,7 +10,7 @@ pipeline {
         stages {
             stage('Checkout Code') {
                 steps {
-                    'branch: main', url:'http://github.com/vikas'
+                    'branch: main', url:'http://github.com/vikasghandge'
                 }
             }
         }
