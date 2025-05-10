@@ -1,6 +1,6 @@
 
 SOURCE_DIR="/home/ubuntu"   # source dir
-DEST_DIR="/tmp/backup_dir"
+DEST_DIR="/tmp/backup_dir"  # de
 DATE=(date +"%y-%m-%d-%H-%M-%S")
 DAYS_TO_KEEP= 30
 BACKUP_NAME="backup_*.tar.gz"
