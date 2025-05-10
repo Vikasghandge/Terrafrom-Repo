@@ -1,5 +1,5 @@
 
-SOURCE_DIR="/home/ubuntu"   
+SOURCE_DIR="/home/ubuntu"   # source dir
 DEST_DIR="/tmp/backup_dir"
 DATE=(date +"%y-%m-%d-%H-%M-%S")
 DAYS_TO_KEEP= 30
