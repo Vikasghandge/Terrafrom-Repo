@@ -6,5 +6,6 @@ provider "aws" {
 
 resource "aws_instance" "my-instance" {
     ami = "*******************"
-    instance_type = "t2"
+    instance_type = "t2.small"
+    key_name = "value"
 }
