@@ -10,5 +10,9 @@ selector:
 matchLabels: 
  app: demo
 template:
+  metadata: 
+  name: demo-app
+  labels:
+     app: demo
  
      
