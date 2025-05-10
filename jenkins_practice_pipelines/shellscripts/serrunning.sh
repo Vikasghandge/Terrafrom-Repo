@@ -35,3 +35,7 @@ SERVICE='nginx'
     echo "$SERVICE is not running"
 fi
 
+
+
+
+SERVICE
