@@ -39,4 +39,4 @@ fi
 
 
 SERVICE="nginx"
-if systemctl
+if systemctl is-active --qu
