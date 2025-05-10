@@ -1,0 +1,2 @@
+variable "instance_type" {
+}
