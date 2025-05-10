@@ -8,7 +8,9 @@ pipeline {
             }
         }
         stage('Terraform Version') {
-            steps
+            steps {
+                sh 'terra'
+            }
         }
     }
 }
