@@ -29,5 +29,6 @@ metadata:
  labels: 
    app: demo
 spec: 
- type: Load   
+ type: LoadBalancer
+ Ports:    
      
