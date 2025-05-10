@@ -2,6 +2,10 @@ pipeline {
     agent any 
 
     stages {
-        stage('Chekout Code')
+        stage('Chekout Code') {
+            steps {
+                
+            }
+        }
     }
 }
