@@ -10,6 +10,6 @@ resource "aws_instance" "my-instance" {
     key_name = "vikas-key"
 }
 
-resource "aws_s3_bucket" "my-s" {
+resource "aws_s3_bucket" "my-bucket" {
     
 }
