@@ -1,5 +1,8 @@
 
 
 provider "aws" { 
-    region = "value"
+    region = "ap-south-1"
+}
+
+resource "aws_instance" "name" {
 }
