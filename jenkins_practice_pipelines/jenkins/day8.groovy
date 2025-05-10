@@ -24,3 +24,5 @@ pipeline {
         }
     }
 }
+
+// maven lifecycle//
