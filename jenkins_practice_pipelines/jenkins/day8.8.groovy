@@ -10,7 +10,7 @@ pipeline {
         stages {
             stage('Checkout Code') {
                 steps {
-                    'branch: '
+                    'branch: main', ''
                 }
             }
         }
