@@ -29,4 +29,5 @@ pipeline {
 // Checkout -  fetch from github
 // compile - which will compile code into computer language.
 // build - which will build code
-// package - which will package all dependencies, libe
+// package - which will package all dependencies, liberies, and code
+// test - it will check valu
