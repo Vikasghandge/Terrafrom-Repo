@@ -18,5 +18,5 @@ template:
   - name: demo-contaier
     image: ghandgevikas/demo:latest
     Ports:
-    - containersPort: 
+    - containersPort: 3000
      
