@@ -16,5 +16,6 @@ template:
  spec: 
   containers: 
   - name: demo-contaier
-    image: ghandgevikas/
+    image: ghandgevikas/demo:latest
+    
      
