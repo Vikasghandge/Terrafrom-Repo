@@ -4,4 +4,5 @@ metadata:
   name: nginx
 spec: 
  conatiners: 
- - name: nginx  
+ - name: nginx 
+   image:   
