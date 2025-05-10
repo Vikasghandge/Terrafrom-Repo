@@ -34,7 +34,9 @@ pipeline {
             }
         }
         stage('Terraform Apply/Destroy') {
-            steps
+            steps {
+                dir('ter')
+            }
         }
     }
 }
