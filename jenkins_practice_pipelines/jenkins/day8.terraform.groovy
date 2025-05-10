@@ -15,7 +15,7 @@ pipeline {
         stage('Terraform init') {
             steps {
                 dir('terraform') {
-                    sh 'terraform init'
+                    sh 'terraform init'  // init backn
                 }
             }
         }
