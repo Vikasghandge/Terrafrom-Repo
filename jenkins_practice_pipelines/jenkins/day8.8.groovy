@@ -4,6 +4,6 @@ pipeline {
     agent any
 
     environment {
-        IMA
+        IMAGE_NAME = ghandgevikas/ngi
     }
 }
