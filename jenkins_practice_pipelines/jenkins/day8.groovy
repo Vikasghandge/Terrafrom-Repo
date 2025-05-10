@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('Checkout Code') {
             steps {
-                'branch: main', url: "http://github.com"
+                'branch: main', url: "http://github.com/vikasghandge/terraform.git"
             }
         }
     }
