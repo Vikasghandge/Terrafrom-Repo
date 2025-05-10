@@ -11,4 +11,4 @@ tar -cvf "$DEST_DIR/$BACKUP_NAME" -C "$SOURCE_DIR"
 
 find "DEST_DIR" -type f -name "backup_*.tar.gz" -mtime +DAYS_TO_KEEP -delete
 
-echo "backup "
+echo "backup sucessfully"
