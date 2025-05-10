@@ -28,4 +28,4 @@ pipeline {
 // maven lifecycle//
 // Checkout -  fetch from github
 // compile - which will compile code into computer language.
-// 
+// build - 
