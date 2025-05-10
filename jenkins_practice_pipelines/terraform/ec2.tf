@@ -1,4 +1,5 @@
 
 
-provider "" {
+provider "aws" { 
+    region = "value"
 }
