@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Terraform Version') {
             steps {
-                sh 'terraform --version'
+                sh 'terraform --version'  // check ter
             }
         }
         stage('Terraform init') {
