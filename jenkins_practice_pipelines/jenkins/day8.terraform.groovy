@@ -29,7 +29,7 @@ pipeline {
         stage('Terraform Plan') {
             steps {
                 dir('terraform') {
-                    sh 'terraform plan'  // this will preview what 
+                    sh 'terraform plan'  // this will preview what chnages will happen
                 }
             }
         }
