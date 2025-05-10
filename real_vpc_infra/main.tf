@@ -2,7 +2,7 @@ resource "aws_vpc" "Terraform_vpc" {
     # // this will help to import vpc manually crated //
 }
 
-resource "aws_subnet" "Terraform_" {
+resource "aws_subnet" "Terraform_pub_sub" {
     vpc_id = "value"
     
 }
