@@ -27,4 +27,4 @@ pipeline {
 
 // maven lifecycle//
 // Checkout -  fetch from github
-// compile - 
+// compile - which will compile code into computer lan
