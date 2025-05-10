@@ -26,4 +26,5 @@ pipeline {
 }
 
 // maven lifecycle//
-// Checkout -  
+// Checkout -  fetch from github
+// compile - 
