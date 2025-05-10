@@ -26,6 +26,10 @@ pipeline {
                 }
             }
         }
-        stage('Terraform')
+        stage('Terraform Plan') {
+            steps {
+                dir
+            }
+        }
     }
 }
