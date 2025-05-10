@@ -7,6 +7,6 @@ pipeline {
                 'branch: main', url: 'http://github.com/vikasghandge/terraform.git'
             }
         }
-        stage
+        stage('Terraform Version')
     }
 }
