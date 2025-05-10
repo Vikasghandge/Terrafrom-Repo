@@ -15,21 +15,21 @@ pipeline {
         stage('Terraform init') {
             steps {
                 dir('terraform') {
-                    sh 'terraform init'  // init backend and install provider plugins
+                    sh 'terraform init'  // init backend and install provider plugins //
                 }
             }
         }
         stage('Terraform Validate') {
             steps {
                 dir('terraform') {
-                    sh 'terraform validate'  // validate
+                    sh 'terraform validate'  // validate //
                 }
             }
         }
         stage('Terraform Plan') {
             steps {
                 dir('terraform') {
-                    sh 'terraform plan'  // this will preview what chnages will happen
+                    sh 'terraform plan'  // this will preview what chnages will happen //
                 }
             }
         }
