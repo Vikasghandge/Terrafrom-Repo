@@ -1,3 +1,3 @@
 variable "instance_type" {
-    description = "value"
+    description = "the type of ec"
 }
