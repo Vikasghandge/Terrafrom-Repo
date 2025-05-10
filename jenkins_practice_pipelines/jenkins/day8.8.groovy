@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Docker Login') {
             steps {
-                withCredentilas([Cre])
+                withCredentilas([Credential])
             }
         }
     }
