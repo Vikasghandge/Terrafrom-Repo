@@ -8,7 +8,7 @@ pipeline {
         TAG = latest
 
         stages {
-            stage
+            stage('')
         }
     }
 }
