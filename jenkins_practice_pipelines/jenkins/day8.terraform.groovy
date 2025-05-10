@@ -26,6 +26,6 @@ pipeline {
                 }
             }
         }
-        stage
+        stage('Terraform')
     }
 }
