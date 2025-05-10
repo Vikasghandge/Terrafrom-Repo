@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Chekout Code') {
             steps {
-                
+                'branch: main', 
             }
         }
     }
