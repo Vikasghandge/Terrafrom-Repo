@@ -21,7 +21,9 @@ pipeline {
         }
         stage('Terraform Validate') {
             steps {
-                dir
+                dir('terraform') {
+                    
+                }
             }
         }
     }
