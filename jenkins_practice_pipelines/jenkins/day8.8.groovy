@@ -26,6 +26,8 @@ pipeline {
                 }
             }
         }
-        stage('')
+        stage('DockerHub Push') {
+            steps 
+        }
     }
 }
