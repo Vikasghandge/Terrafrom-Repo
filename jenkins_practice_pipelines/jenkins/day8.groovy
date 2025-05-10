@@ -8,7 +8,9 @@ pipeline {
             }
         }
         stage('build code') {
-            steps
+            steps {
+                
+            }
         }
     }
 }
