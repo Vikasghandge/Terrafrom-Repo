@@ -7,5 +7,5 @@ BACKUP_NAME="backup_*.tar.gz" #  backup name
 
 mkdir -p $DEST_DIR
 
-tar -c
+tar -cvf ""
 
