@@ -19,6 +19,10 @@ pipeline {
                 }
             }
         }
-        stage('Terraform Validate')
+        stage('Terraform Validate') {
+            steps {
+                dir
+            }
+        }
     }
 }
