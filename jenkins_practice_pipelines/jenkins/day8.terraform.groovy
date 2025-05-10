@@ -33,6 +33,6 @@ pipeline {
                 }
             }
         }
-        stage('Terraform apply/des')
+        stage('Terraform Apply/Destroy')
     }
 }
