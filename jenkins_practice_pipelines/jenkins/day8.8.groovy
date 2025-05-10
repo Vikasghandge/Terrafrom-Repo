@@ -1,1 +1,1 @@
-// in this script i have gave steps to how to build docker 
+// in this script i have gave steps to how to build docker image 
