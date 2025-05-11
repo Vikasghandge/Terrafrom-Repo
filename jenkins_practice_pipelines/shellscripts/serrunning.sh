@@ -47,4 +47,4 @@ echo "$SERVICE is not running"
 
 
 SERVICE="nginx"
-if systemctl is-active --quite $"
+if systemctl is-active --quite "$SERVICE"
