@@ -22,7 +22,7 @@ pipeline {
                 sh 'terrform plan'
             }
         }
-        stage('')
+        stage('terrform apply/destroy')
     }
 
 
