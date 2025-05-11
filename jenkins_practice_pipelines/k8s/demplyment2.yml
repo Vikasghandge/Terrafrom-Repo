@@ -14,7 +14,8 @@ template:
   labels: 
    app: demo 
 spec: 
-containers:   
+ containers: 
+ - name   
 
 
     
