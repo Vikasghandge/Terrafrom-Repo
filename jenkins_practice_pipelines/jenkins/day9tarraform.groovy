@@ -14,12 +14,12 @@ pipeline {
         }
         stage('Terraform init') {
             steps {
-                sh 'terraform init' // init backend dir and install 
+                sh 'terraform init' // init backend dir and install aws plugins //
             }
         }
         stage('Terraform validate') {
             steps {
-                sh 'terraform validate'
+                sh 'terraform validate' //
             }
         }
         stage('Terraform Plan') {
