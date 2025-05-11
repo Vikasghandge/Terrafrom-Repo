@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Terraform init') {
             steps {
-                sh 'terraform init' //
+                sh 'terraform init' // init bacn
             }
         }
         stage('Terraform validate') {
