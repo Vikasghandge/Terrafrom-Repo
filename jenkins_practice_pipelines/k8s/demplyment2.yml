@@ -6,5 +6,6 @@ metadata:
    app: demo
 spec: 
 replicas: 2
-
+selector:
+ matchL
     
