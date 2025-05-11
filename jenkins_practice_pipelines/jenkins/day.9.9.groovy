@@ -15,7 +15,11 @@ pipeline {
                     'branch: main', url: 'http://github.com/vikasghandge/terraform.git'
                 }
             }
-            stage('Docker Build Image')
+            stage('Docker Build Image') {
+                steps {
+                    
+                }
+            }
         }
     }
 
