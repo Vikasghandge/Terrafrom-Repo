@@ -22,6 +22,7 @@ pipeline {
                 sh 'terrform plan'
             }
         }
+        stage('')
     }
 
 
