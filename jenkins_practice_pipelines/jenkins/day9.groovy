@@ -1,1 +1,5 @@
-// this pipeline define mvn depl
+// this pipeline define mvn deployment stages //
+
+pipeline {
+    
+}
