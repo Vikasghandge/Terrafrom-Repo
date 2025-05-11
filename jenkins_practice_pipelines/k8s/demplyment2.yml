@@ -33,6 +33,8 @@ spec:
  type: LoadBalancer
  Ports: 
   - port: 80
+  targetPort: 
+  
 
 
     
