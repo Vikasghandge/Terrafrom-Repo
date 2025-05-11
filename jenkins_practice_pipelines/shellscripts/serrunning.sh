@@ -46,4 +46,5 @@ echo "$SERVICE is not running"
 
 
 
-SERVICE=
+SERVICE="nginx"
+if 
