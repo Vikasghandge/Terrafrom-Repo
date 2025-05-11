@@ -47,4 +47,4 @@ echo "$SERVICE is not running"
 
 
 SERVICE="nginx"
-if 
+if systemctl is-active
