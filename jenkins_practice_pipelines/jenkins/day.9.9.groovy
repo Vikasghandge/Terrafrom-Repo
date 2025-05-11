@@ -4,7 +4,10 @@
 
 pipeline {
     agent any 
-    
+
+    environment {
+        IMA
+    }
 
 
 }
