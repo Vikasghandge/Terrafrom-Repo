@@ -3,4 +3,5 @@ kind: Deployment
 metadata: 
   name: demo-app
   labels: 
-   app: 
+   app: demo
+   
