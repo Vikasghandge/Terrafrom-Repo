@@ -32,6 +32,7 @@ pipeline {
                     sh 'docker push "$IMAGE_NAME:$TAG"'
                 }
             }
+            
         }
     }
 
