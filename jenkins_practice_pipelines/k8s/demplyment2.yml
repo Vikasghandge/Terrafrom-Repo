@@ -28,7 +28,8 @@ kind: Service
 metadata: 
  name: demo-service
  labels: 
-  app: 
+  app: demo
+spec:   
 
 
     
