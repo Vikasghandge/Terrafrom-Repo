@@ -16,7 +16,8 @@ template:
 spec: 
  containers: 
  - name: demo-container
-   image: nginx:   
+   image: nginx:1.1
+   Po   
 
 
     
