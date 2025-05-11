@@ -15,7 +15,8 @@ template:
    app: demo 
 spec: 
  containers: 
- - name: demo-container   
+ - name: demo-container
+   image: nginx:   
 
 
     
