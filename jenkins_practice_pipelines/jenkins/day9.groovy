@@ -29,4 +29,4 @@ pipeline {
 
 // mvn lifecycle//
 mvn clean install -- // it will clean old build
-mvn 
+mvn com
