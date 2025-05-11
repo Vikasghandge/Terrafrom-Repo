@@ -29,7 +29,8 @@ metadata:
  name: demo-service
  labels: 
   app: demo
-spec:   
+spec: 
+ type: LoadBala
 
 
     
