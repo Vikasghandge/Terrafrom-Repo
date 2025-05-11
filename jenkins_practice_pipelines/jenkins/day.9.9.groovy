@@ -22,7 +22,9 @@ pipeline {
             }
             stage('Docker Login DockerHub') {
                 steps {
-                    withCredentials([usernamePassword(CredentialsId: 'DOCKERHUB_CREDENTAILS', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS' )])
+                    withCredentials([usernamePassword(CredentialsId: 'DOCKERHUB_CREDENTAILS', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS' )]) {
+                        echo 
+                    }
                 }
             }
         }
