@@ -31,3 +31,4 @@ pipeline {
 mvn clean install -- // it will clean old build
 mvn compile -- // this will compile code into computer language
 mvn package -- // will package codes dependency, libery
+mvn test -- // test ocall y
