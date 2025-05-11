@@ -12,7 +12,7 @@ pipeline {
         stages {
             stage('Chekout Code') {
                 stpes {
-                    'branch: main',
+                    'branch: main', ''
                 }
             }
         }
