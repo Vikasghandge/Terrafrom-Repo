@@ -12,6 +12,7 @@ matchLabels:
 template: 
  metadata: 
   labels: 
-   app: 
+   app: demo 
+   
 
     
