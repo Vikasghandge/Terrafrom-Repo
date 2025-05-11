@@ -20,7 +20,7 @@ pipeline {
                     sh 'docker build -t $IMAGE_NAME:$TAG .'
                 }
             }
-            stage('Docker Lo')
+            stage('Docker Login DockerHub')
         }
     }
 
