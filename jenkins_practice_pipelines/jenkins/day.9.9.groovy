@@ -6,8 +6,8 @@ pipeline {
     agent any 
 
     environment {
-        IMAGE_NAME = "ghandgevikas/nginx"
-        TAG =
+        IMAGE_NAME = ghandgevikas/nginx
+        TAG = latest
     }
 
 
