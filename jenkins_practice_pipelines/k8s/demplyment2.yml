@@ -10,6 +10,7 @@ selector:
 matchLabels:
  app: demo 
 template: 
- meta
+ metadata: 
+ 
 
     
