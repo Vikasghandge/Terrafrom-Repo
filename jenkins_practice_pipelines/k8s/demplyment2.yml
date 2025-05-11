@@ -4,4 +4,5 @@ metadata:
   name: demo-app
   labels: 
    app: demo
-   
+spec: 
+    
