@@ -9,12 +9,12 @@ pipeline {
         }
         stage('terraform version') {
             steps {
-                sh 'terraform --verison'  // verify version and install
+                sh 'terraform --verison'  // verify version and installations //
             }
         }
         stage('Terraform init') {
             steps {
-                sh 'terraform init'
+                sh 'terraform init' //
             }
         }
         stage('Terraform validate') {
