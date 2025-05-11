@@ -7,7 +7,7 @@ pipeline {
                 'branch: main', url: 'http://github.com/vikasghandge/docker.git'
             }
         }
-        stage
+        stage('')
     }
 
 
