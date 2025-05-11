@@ -24,7 +24,7 @@ pipeline {
         }
         stage('terrform apply/destroy') {
             steps {
-                dir
+                dir(terraform)
             }
         }
     }
