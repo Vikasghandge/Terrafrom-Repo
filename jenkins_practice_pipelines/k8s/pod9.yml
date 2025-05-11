@@ -4,4 +4,6 @@ metadata:
   name: nginx
 spec: 
   containers:
-    
+  - name: 
+    image: nginx:1.1 
+      
