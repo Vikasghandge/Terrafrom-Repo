@@ -27,7 +27,7 @@ pipeline {
                     }
                 }
             }
-            stag
+            stage('')
         }
     }
 
