@@ -1,3 +1,3 @@
 
 
-// here defined dcoker stages buld 
+// here defined dcoker stages build, login, tag, and push
