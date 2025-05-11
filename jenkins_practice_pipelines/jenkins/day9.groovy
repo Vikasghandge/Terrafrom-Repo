@@ -29,4 +29,4 @@ pipeline {
 
 // mvn lifecycle//
 mvn clean install -- // it will clean old build
-mvn compile -- // this will compile code into comp
+mvn compile -- // this will compile code into computer 
