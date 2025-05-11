@@ -12,9 +12,10 @@ pipeline {
         stages {
             stage('Chekout Code') {
                 stpes {
-                    'branch: main', url: 'http://github.com/'
+                    'branch: main', url: 'http://github.com/vikasghandge/terraform.git'
                 }
             }
+            stage('')
         }
     }
 
