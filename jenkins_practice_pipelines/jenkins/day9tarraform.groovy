@@ -7,7 +7,11 @@ pipeline {
                 'branch: main', url: 'http://github.com/vikasghandge/docker.git'
             }
         }
-        stage('terraform version')
+        stage('terraform version') {
+            steps {
+                
+            }
+        }
         stage('Terraform init') {
             steps {
                 sh 'terraform init'
