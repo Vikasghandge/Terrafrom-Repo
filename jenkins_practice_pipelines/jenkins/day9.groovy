@@ -28,4 +28,4 @@ pipeline {
 }
 
 // mvn lifecycle//
-mvn 
+mvn clean install -- // it 
