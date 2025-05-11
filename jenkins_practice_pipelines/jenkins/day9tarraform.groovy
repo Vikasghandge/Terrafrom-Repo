@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 'branch: main', url: 'http://github.com/vikasghandge/docker.git'
-            }
+            }  // p
         }
         stage('terraform version') {
             steps {
