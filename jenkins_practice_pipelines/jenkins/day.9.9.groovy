@@ -10,7 +10,11 @@ pipeline {
         TAG = latest
 
         stages {
-            stage('')
+            stage('Chekout Code') {
+                stpes {
+                    
+                }
+            }
         }
     }
 
