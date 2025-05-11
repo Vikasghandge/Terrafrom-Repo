@@ -28,4 +28,4 @@ find /path/of/file -type f -name "log.*" -mtime +7 -delete
  # type - file type
 
 
-
+find 
