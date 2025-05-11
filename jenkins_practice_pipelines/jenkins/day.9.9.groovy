@@ -12,7 +12,7 @@ pipeline {
         stages {
             stage('Chekout Code') {
                 stpes {
-                    'branch: main', url: 'http'
+                    'branch: main', url: 'http://github.com/'
                 }
             }
         }
