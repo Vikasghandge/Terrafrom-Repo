@@ -22,7 +22,11 @@ pipeline {
                 sh 'terrform plan'
             }
         }
-        stage('terrform apply/destroy')
+        stage('terrform apply/destroy') {
+            steps {
+                sh 'terra'
+            }
+        }
     }
 
 
