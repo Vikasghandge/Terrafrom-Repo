@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Terraform Plan') {
             steps {
-                sh 'terrform plan'  // it will show preview changes be
+                sh 'terrform plan'  // it will show preview changes before applying //
             }
         }
         stage('terrform apply/destroy') {
