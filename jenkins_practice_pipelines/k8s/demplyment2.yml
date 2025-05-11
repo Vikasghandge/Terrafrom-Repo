@@ -30,7 +30,8 @@ metadata:
  labels: 
   app: demo
 spec: 
- type: LoadBala
+ type: LoadBalancer
+ po
 
 
     
