@@ -31,7 +31,8 @@ metadata:
   app: demo
 spec: 
  type: LoadBalancer
- po
+ Ports: 
+  - port: 80
 
 
     
