@@ -30,7 +30,7 @@ pipeline {
         stage('terrform apply/destroy') {
             steps {
                 dir(terraform) {
-                    sh 'terraform ${action} --auto-approve '  //apply 
+                    sh 'terraform ${action} --auto-approve '  //apply or destroy infra//
                 }
             }
         }
