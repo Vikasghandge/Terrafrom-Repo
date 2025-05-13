@@ -10,7 +10,7 @@ spec:
       maxSurge: 25%
       maxUnavailable: 25%
     type: RollingUpdate
-  replicas: 25
+  replicas: 20
   selector:
     matchLabels:
       app: bms
