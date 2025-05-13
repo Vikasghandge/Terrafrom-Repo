@@ -17,7 +17,7 @@ spec:
   template:
     metadata:
       labels:
-        app: bms
+        app: rolling
     spec:
       containers:
       - name: bms-container
