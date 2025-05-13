@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: bms-container
-        image: ghandgevikas/env-green # Replace with your Docker image
+        image: ghandgevikas/env-green:v1 # Replace with your Docker image
         ports:
         - containerPort: 3000  # Replace with the port your app runs on
 
