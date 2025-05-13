@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: test-ingress
+  namespace: test-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: vikas.local
+    http:
+      paths:
+        - path: /nginx
+          pathType: Prefix
+          backend:
+            service:
+              name: nginx-service
+              port:
+                number: 80
+        - path: /httpd
+          pathType: Prefix
+          backend:
+            service:
+              name: httpd-service
+              port:
+                number: 80
