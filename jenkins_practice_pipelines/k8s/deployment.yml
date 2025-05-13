@@ -13,7 +13,7 @@ spec:
   replicas: 20
   selector:
     matchLabels:
-      app: bms
+      app: rolling
   template:
     metadata:
       labels:
