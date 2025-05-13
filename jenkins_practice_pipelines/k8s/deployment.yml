@@ -20,7 +20,7 @@ spec:
         app: rolling
     spec:
       containers:
-      - name: bms-container
+      - name: rolling-container
         image: ghandgevikas/env-green:v1 # Replace with your Docker image
         ports:
         - containerPort: 3000  # Replace with the port your app runs on
