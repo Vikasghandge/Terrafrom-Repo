@@ -6,8 +6,8 @@ metadata:
    app: demo
 spec: 
 replicas: 2
-s elector:
-matchLabels:
+ selector:
+  matchLabels:
  app: demo 
 template: 
  metadata: 
