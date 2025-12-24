@@ -1,2 +1,4 @@
-# project-git-01
-my-first-git-repo-for-trial
+curl -X POST "https://localhost:8001/api/APISave_V2/GetUserRules" ^
+-H "Content-Type: application/json" ^
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNaWNyb1NlcnZpY2VUb2tlbiIsImp0aSI6IjgwMmEyMGVhLWJkMDgtNGE5Yy1iNjI0LWJkZjliYWZlNjE3ZCIsImlhdCI6IjE3NjY1NTk5MjQiLCJVc2VyTmFtZSI6IkFkbWluIiwiUGFzc3dvcmQiOiI1bmM1VFpvWnlWd3d5ZlRYRllmaXNvOXVpVWxoQnAxRWZsdm9tQU41ZjZnPSIsImV4cCI6MTc2NjY0NjMyNCwiaXNzIjoiTWljcm9TZXJ2aWNlQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJNaWNyb1NlcnZpY2VBdWRpZW5jZSJ9.SttOAfBmu4opjkM14N2AgYqy7WAZHbko07ge04q4-u0" ^
+--data "{  \"UserName\": \"ANBGLOBALDC\\ashutosh.sanghvi\",  \"HostName\": \"DSK122\",  \"MachineType\": 1,  \"LastModifyDateTime\": \"2025-12-10 11:31:27\",  \"IsFirstCall\": false,  \"OS\": \"Windows\",  \"OSName\": \"Microsoft Windows 10 Pro\",  \"MachineIP\": \"\",  \"UUID\": \"03560274-043C-05B3-5806-5D0700080009\"}"
